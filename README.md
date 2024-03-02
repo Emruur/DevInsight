@@ -6,7 +6,7 @@
     - Number of comments
     - Number of lines added & deleted
     - Number of pull requests opened & closed (Not implemented in insights)
-    ![](githubinsight.png)
+    ![](assets/githubinsight.png)
 
 - ### Code Ceview Collabortion
     - efficiency of code review process
@@ -32,7 +32,15 @@
 ## RepoSense
 RepoSense is a contribution analysis tool for Git repositories. It is particularly useful for those who want a chronological visualisation of the code contributions and commits made to a group of repositories. Educators can use RepoSense to track the work done in class projects, while team leads may use it to oversee their project teams.
 - Does categorization on the types of commits, chronological visualization
-    ![](reposense.png)
+    ![](assets/reposense.png)
+
+## Git Tracker
+https://github.com/SOM-Research/busfactor
+ValerioCosentino,JavierLuisCánovasIzquierdo,andJordiCabot.2015.Assessing the bus factor of Git repositories. In 2015 IEEE 22nd International Conference on Software Analysis, Evolution, and Reengineering (SANER). IEEE, 499–503.
+
+![](assets/bus_factor.png)
+
+
 
 ## gitlogstats
 This repository contains a command-line tool, gitlogstats, written in python, to track developers' contributions to one or more Git repositories within a particular time range. GitHub's Insights tools and charts are not extremely useful, and often omit contributors or give misleading statistics.
@@ -59,7 +67,7 @@ The goal of the Evolution working group is to develop metrics to assess the life
     - Issue Response Time	How much time passes between the opening of an issue and a response - in the issue thread from another contributor?
     - Issue Resolution Duration	How long does it take for an issue to be closed?
 
-    ![p](issuemetrics.png)
+    ![p](assets/issuemetrics.png)
 
     - *We might do a personalized issue analysis, how eager to response to issues, how fast the issue is resolved by the developer.*
 
