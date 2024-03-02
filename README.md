@@ -6,6 +6,7 @@
     - Number of comments
     - Number of lines added & deleted
     - Number of pull requests opened & closed (Not implemented in insights)
+    ![](githubinsight.png)
 
 - ### Code Ceview Collabortion
     - efficiency of code review process
@@ -28,7 +29,20 @@
     - who merges issues? Might be a leader sign?
 
 
+## RepoSense
+RepoSense is a contribution analysis tool for Git repositories. It is particularly useful for those who want a chronological visualisation of the code contributions and commits made to a group of repositories. Educators can use RepoSense to track the work done in class projects, while team leads may use it to oversee their project teams.
+- Does categorization on the types of commits, chronological visualization
+    ![](reposense.png)
 
+## gitlogstats
+This repository contains a command-line tool, gitlogstats, written in python, to track developers' contributions to one or more Git repositories within a particular time range. GitHub's Insights tools and charts are not extremely useful, and often omit contributors or give misleading statistics.
+
+This script calculates the following, for each developer in each repository:
+
+number of commits
+number of lines added
+number of lines deleted
+number of files changed
 
 ## CHAOSS Evolution Working Group
 
