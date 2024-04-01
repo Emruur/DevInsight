@@ -86,7 +86,7 @@ def fetch_developers_and_commits(repo_url: str, token: str) -> GitDevelopers:
                 devs[author_name].num_of_commits += 1
                 devs[author_name].num_of_add += additions
                 devs[author_name].num_of_delete += deletions
-                devs[author_name].num_of_files_changed += files_changed
+                devs[author_name].num_of_files_changed += files_changed # TODO: files changed may not be accurate (100 kere aynı dosya değiştirilmiş olabilir)
         return GitDevelopers(devs=devs)
     else:
         print(f"Failed to fetch developers and commits for {repo_url}. Status code: {response.status_code}")
