@@ -7,30 +7,30 @@ from urllib.parse import urlparse
 class Developer:
     """Class for keeping track of an item in inventory."""
     name: str
-    num_of_commits: int=0
-    num_of_add: int=0
-    num_of_delete:int= 0
+    num_of_commits: int = 0
+    num_of_add: int = 0
+    num_of_delete: int = 0
 
 @dataclass
 class GitDevelopers:
     devs: dict[str, Developer]
 
-def fetch_commits(repo_url: str, token: str) -> int:
+def fetch_developers_and_commits(repo_url: str, token: str) -> GitDevelopers:
     """
-    Fetches the number of commits in a repository using GraphQL.
+    Fetches the developers and their commit counts in a repository using GraphQL.
 
     Args:
         repo_url (str): The URL of the repository.
         token (str): GitHub API token for authentication.
 
     Returns:
-        int: The number of commits in the repository.
+        GitDevelopers: Object containing developers and their commit counts.
     """
     parsed_url = urlparse(repo_url)
     path_parts = parsed_url.path.strip('/').split('/')
     if len(path_parts) != 2:
         print("Invalid repository URL")
-        return 0
+        return GitDevelopers(devs={})
 
     owner, repo_name = path_parts
     query = """
@@ -40,7 +40,13 @@ def fetch_commits(repo_url: str, token: str) -> int:
           target {
             ... on Commit {
               history {
-                totalCount
+                edges {
+                  node {
+                    author {
+                      name
+                    }
+                  }
+                }
               }
             }
           }
@@ -57,14 +63,23 @@ def fetch_commits(repo_url: str, token: str) -> int:
     response = requests.post('https://api.github.com/graphql', json={'query': query}, headers=headers)
     if response.status_code == 200:
         data = response.json()
-        num_commits = data['data']['repository']['defaultBranchRef']['target']['history']['totalCount']
-        return num_commits
+        devs = {}
+        for edge in data['data']['repository']['defaultBranchRef']['target']['history']['edges']:
+            author_name = edge['node']['author']['name']
+            if author_name not in devs:
+                devs[author_name] = 1
+            else:
+                devs[author_name] += 1
+        return GitDevelopers(devs=devs)
     else:
-        print(f"Failed to fetch commits for {repo_url}. Status code: {response.status_code}")
-        return 0
+        print(f"Failed to fetch developers and commits for {repo_url}. Status code: {response.status_code}")
+        return GitDevelopers(devs={})
 
 # Example usage:
-repo_url = "https://github.com/NationalSecurityAgency/ghidra"
+repo_url = "https://github.com/python-mode/python-mode"
 github_token = config.TOKEN
-num_commits = fetch_commits(repo_url, github_token)
-print(f"Number of commits in {repo_url}: {num_commits}")
+git_developers = fetch_developers_and_commits(repo_url, github_token)
+print("Developer Name\t\tNumber of Commits")
+print("--------------------------------------")
+for developer, commit_count in git_developers.devs.items():
+    print(f"{developer}\t\t\t{commit_count}")
