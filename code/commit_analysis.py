@@ -7,6 +7,7 @@ from urllib.parse import urlparse
 class Developer:
     """Class for keeping track of an item in inventory."""
     name: str
+    username: str
     num_of_commits: int = 0
     num_of_add: int = 0
     num_of_delete: int = 0
@@ -44,6 +45,9 @@ def fetch_developers_and_commits(repo_url: str, token: str) -> GitDevelopers:
                   node {
                     author {
                       name
+                      user {
+                        login
+                      }
                     }
                   }
                 }
@@ -66,10 +70,11 @@ def fetch_developers_and_commits(repo_url: str, token: str) -> GitDevelopers:
         devs = {}
         for edge in data['data']['repository']['defaultBranchRef']['target']['history']['edges']:
             author_name = edge['node']['author']['name']
+            author_username = edge['node']['author']['user']['login'] if edge['node']['author']['user'] else None
             if author_name not in devs:
-                devs[author_name] = 1
+                devs[author_name] = Developer(name=author_name, username=author_username, num_of_commits=1)
             else:
-                devs[author_name] += 1
+                devs[author_name].num_of_commits += 1
         return GitDevelopers(devs=devs)
     else:
         print(f"Failed to fetch developers and commits for {repo_url}. Status code: {response.status_code}")
@@ -79,7 +84,7 @@ def fetch_developers_and_commits(repo_url: str, token: str) -> GitDevelopers:
 repo_url = "https://github.com/python-mode/python-mode"
 github_token = config.TOKEN
 git_developers = fetch_developers_and_commits(repo_url, github_token)
-print("Developer Name\t\tNumber of Commits")
-print("--------------------------------------")
-for developer, commit_count in git_developers.devs.items():
-    print(f"{developer}\t\t\t{commit_count}")
+print("Developer Name\t\tGitHub Username\t\tNumber of Commits")
+print("--------------------------------------------------------------")
+for developer, data in git_developers.devs.items():
+    print(f"{data.name}\t\t\t{data.username}\t\t\t{data.num_of_commits}")
