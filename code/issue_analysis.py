@@ -17,14 +17,19 @@ class Developer:
     num_of_issues_assigned: int = 0
     num_of_issues_resolved: int = 0  # Track the number of issues resolved by the developer
     total_resolution_time: float = 0.0  # Total time to resolve issues in hours
-    average_issue_resolution_time: float = 0.0  # Average time to resolve an issue in hours
 
+    @property
+    def average_issue_resolution_time(self):
+        if self.num_of_issues_resolved > 0:  # Calculate average based on resolved issues
+            return self.total_resolution_time / self.num_of_issues_resolved
+        else:
+            return 0
+        
     def update_resolution_metrics(self, resolution_time):
         if resolution_time is not None:
             self.num_of_issues_resolved += 1
             self.total_resolution_time += resolution_time
-            if self.num_of_issues_resolved > 0:  # Calculate average based on resolved issues
-                self.average_issue_resolution_time = self.total_resolution_time / self.num_of_issues_resolved
+
 
 class GitDevelopers:
     def __init__(self, issues):
@@ -43,10 +48,6 @@ class GitDevelopers:
 
         if resolution_time is not None:
             self.devs[name].update_resolution_metrics(resolution_time)
-
-
-
-
 
     def populate_git_developers(self, issues):
         for issue in issues:
@@ -69,6 +70,7 @@ class GitDevelopers:
                         self.add_new_developer(assignee)
                     # Assignee is considered as the resolver, so update with resolution time
                     self.update_developer(name=assignee, issue_assigned=True, resolution_time=resolution_time)
+                    #print(f"Start: {created_at} End: {closed_at}")
             elif resolution_time is not None:
                 #TODO what do we do in case of no assignees, should we add this to the creator?
                 pass
@@ -86,19 +88,14 @@ class GitDevelopers:
             print(f"Average Issue Resolution Time (hours): {dev.average_issue_resolution_time:.2f}")
             print("-" * 80)
 
-# Example usage:
-# issues = [...]  # Your list of issues here
-# git_devs = GitDevelopers(issues)
-# git_devs.display()
 
-
-def fetch_all_issues_and_prs(token, owner, repo_name, max_issues=None, max_prs=None):
+def fetch_all_issues(token, owner, repo_name, max_issues=None):
     url = 'https://api.github.com/graphql'
     headers = {'Authorization': f'Bearer {token}', 'Content-Type': 'application/json'}
 
-    # GraphQL query template to fetch both issues and PRs
+    # GraphQL query template to fetch issues
     query_template = """
-    query ($owner: String!, $repoName: String!, $count: Int!, $issuesCursor: String, $prsCursor: String) {
+    query ($owner: String!, $repoName: String!, $count: Int!, $issuesCursor: String) {
     repository(owner: $owner, name: $repoName) {
         issues(first: $count, after: $issuesCursor) {
         edges {
@@ -127,42 +124,20 @@ def fetch_all_issues_and_prs(token, owner, repo_name, max_issues=None, max_prs=N
             hasNextPage
         }
         }
-        pullRequests(first: $count, after: $prsCursor) {
-        edges {
-            node {
-            title
-            url
-            createdAt
-            number
-            }
-            cursor
-        }
-        pageInfo {
-            endCursor
-            hasNextPage
-        }
-        }
     }
     }
     """
 
     all_issues = []
-    all_prs = []
     issues_cursor = None
-    prs_cursor = None
 
     while True:
-        # Calculate fetch count based on remaining items to reach max_issues or max_prs
         issues_fetch_count = 100 if max_issues is None else min(100, max_issues - len(all_issues))
-        prs_fetch_count = 100 if max_prs is None else min(100, max_prs - len(all_prs))
-
-        variables = {'owner': owner, 'repoName': repo_name, 'count': max(issues_fetch_count, prs_fetch_count), 'issuesCursor': issues_cursor, 'prsCursor': prs_cursor}
+        variables = {'owner': owner, 'repoName': repo_name, 'count': issues_fetch_count, 'issuesCursor': issues_cursor}
 
         response = requests.post(url, json={'query': query_template, 'variables': variables}, headers=headers)
         if response.status_code == 200:
             data = response.json()
-
-            # Process issues
             issues = data['data']['repository']['issues']['edges']
             all_issues.extend(issues[:issues_fetch_count])
             if len(issues) == issues_fetch_count and data['data']['repository']['issues']['pageInfo']['hasNextPage']:
@@ -170,24 +145,18 @@ def fetch_all_issues_and_prs(token, owner, repo_name, max_issues=None, max_prs=N
             else:
                 issues_cursor = None
 
-            # Process PRs
-            prs = data['data']['repository']['pullRequests']['edges']
-            all_prs.extend(prs[:prs_fetch_count])
-            if len(prs) == prs_fetch_count and data['data']['repository']['pullRequests']['pageInfo']['hasNextPage']:
-                prs_cursor = prs[-1]['cursor']
-            else:
-                prs_cursor = None
-
-            if (issues_cursor is None or (max_issues is not None and len(all_issues) >= max_issues)) and \
-               (prs_cursor is None or (max_prs is not None and len(all_prs) >= max_prs)):
-                # No more pages for both issues and PRs, or max limit reached
+            if issues_cursor is None or (max_issues is not None and len(all_issues) >= max_issues):
                 break
         else:
             print(f"Query failed to run with a {response.status_code}")
             break
 
-    return all_issues[:max_issues], all_prs[:max_prs]
-def display_issues_and_prs(issues, prs):
+    return all_issues[:max_issues]
+
+
+
+
+def display_issues(issues):
     print("GitHub Issues:")
     print("-" * 60)
     for issue in issues:
@@ -205,16 +174,6 @@ def display_issues_and_prs(issues, prs):
         print(f"Issue Number: {node['number']}")
         print("-" * 60)
 
-    print("\nGitHub Pull Requests:")
-    print("-" * 60)
-    for pr in prs:
-        node = pr['node']
-        print(f"Title: {node['title']}")
-        print(f"URL: {node['url']}")
-        print(f"Created At: {node['createdAt']}")
-        print(f"PR Number: {node['number']}")
-        print("-" * 60)
-
 
 repo_url = "https://github.com/dbeaver/dbeaver"
 
@@ -222,7 +181,7 @@ repo_url = "https://github.com/dbeaver/dbeaver"
 owner, repo_name = repo_url.split('/')[-2:]
 
 # Fetch merged PRs
-all_issues, all_prs = fetch_all_issues_and_prs(github_key, owner, repo_name, max_issues=2000, max_prs=0)
+all_issues = fetch_all_issues(github_key, owner, repo_name, max_issues=None)
 
 dev_info= GitDevelopers(all_issues)
 
