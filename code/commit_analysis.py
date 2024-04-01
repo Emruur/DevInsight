@@ -11,6 +11,7 @@ class Developer:
     num_of_commits: int = 0
     num_of_add: int = 0
     num_of_delete: int = 0
+    num_of_files_changed: int = 0
 
 @dataclass
 class GitDevelopers:
@@ -49,6 +50,9 @@ def fetch_developers_and_commits(repo_url: str, token: str) -> GitDevelopers:
                         login
                       }
                     }
+                    additions
+                    deletions
+                    changedFiles
                   }
                 }
               }
@@ -71,10 +75,18 @@ def fetch_developers_and_commits(repo_url: str, token: str) -> GitDevelopers:
         for edge in data['data']['repository']['defaultBranchRef']['target']['history']['edges']:
             author_name = edge['node']['author']['name']
             author_username = edge['node']['author']['user']['login'] if edge['node']['author']['user'] else None
+            additions = edge['node']['additions']
+            deletions = edge['node']['deletions']
+            files_changed = edge['node']['changedFiles']
             if author_name not in devs:
-                devs[author_name] = Developer(name=author_name, username=author_username, num_of_commits=1)
+                devs[author_name] = Developer(name=author_name, username=author_username, num_of_commits=1,
+                                              num_of_add=additions, num_of_delete=deletions,
+                                              num_of_files_changed=files_changed)
             else:
                 devs[author_name].num_of_commits += 1
+                devs[author_name].num_of_add += additions
+                devs[author_name].num_of_delete += deletions
+                devs[author_name].num_of_files_changed += files_changed
         return GitDevelopers(devs=devs)
     else:
         print(f"Failed to fetch developers and commits for {repo_url}. Status code: {response.status_code}")
@@ -84,7 +96,7 @@ def fetch_developers_and_commits(repo_url: str, token: str) -> GitDevelopers:
 repo_url = "https://github.com/python-mode/python-mode"
 github_token = config.TOKEN
 git_developers = fetch_developers_and_commits(repo_url, github_token)
-print("Developer Name\t\tGitHub Username\t\tNumber of Commits")
-print("--------------------------------------------------------------")
+print("Developer Name\t\tGitHub Username\t\tNumber of Commits\t\tAdditions\tDeletions\tFiles Changed")
+print("------------------------------------------------------------------------------------------------------------------------")
 for developer, data in git_developers.devs.items():
-    print(f"{data.name}\t\t\t{data.username}\t\t\t{data.num_of_commits}")
+    print(f"{data.name}\t\t\t{data.username}\t\t\t{data.num_of_commits}\t\t\t{data.num_of_add}\t\t{data.num_of_delete}\t\t{data.num_of_files_changed}")
