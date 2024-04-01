@@ -1,0 +1,92 @@
+GitHub Developers' Statistics:
+--------------------------------------------------------------------------------
+Developer Name: serge-rider
+Number of Issues Created: 54
+Number of Issues Assigned: 579
+Number of Issues Resolved: 576
+Average Issue Resolution Time (hours): 1417.12
+--------------------------------------------------------------------------------
+Developer Name: titou10titou10
+Number of Issues Created: 0
+Number of Issues Assigned: 2
+Number of Issues Resolved: 2
+Average Issue Resolution Time (hours): 91.08
+--------------------------------------------------------------------------------
+Developer Name: riednyko
+Number of Issues Created: 0
+Number of Issues Assigned: 1
+Number of Issues Resolved: 0
+Average Issue Resolution Time (hours): 0.00
+--------------------------------------------------------------------------------
+Developer Name: efradkin
+Number of Issues Created: 1
+Number of Issues Assigned: 3
+Number of Issues Resolved: 3
+Average Issue Resolution Time (hours): 5011.86
+--------------------------------------------------------------------------------
+Developer Name: ShadelessFox
+Number of Issues Created: 0
+Number of Issues Assigned: 4
+Number of Issues Resolved: 4
+Average Issue Resolution Time (hours): 45345.97
+--------------------------------------------------------------------------------
+Developer Name: Matvey16
+Number of Issues Created: 0
+Number of Issues Assigned: 4
+Number of Issues Resolved: 4
+Average Issue Resolution Time (hours): 50224.53
+--------------------------------------------------------------------------------
+Developer Name: uslss
+Number of Issues Created: 0
+Number of Issues Assigned: 11
+Number of Issues Resolved: 11
+Average Issue Resolution Time (hours): 33339.87
+--------------------------------------------------------------------------------
+Developer Name: LonwoLonwo
+Number of Issues Created: 0
+Number of Issues Assigned: 2
+Number of Issues Resolved: 2
+Average Issue Resolution Time (hours): 46753.61
+--------------------------------------------------------------------------------
+Developer Name: E1izabeth
+Number of Issues Created: 0
+Number of Issues Assigned: 3
+Number of Issues Resolved: 1
+Average Issue Resolution Time (hours): 51611.89
+--------------------------------------------------------------------------------
+Developer Name: Sargul
+Number of Issues Created: 4
+Number of Issues Assigned: 10
+Number of Issues Resolved: 10
+Average Issue Resolution Time (hours): 2254.78
+--------------------------------------------------------------------------------
+Developer Name: serjiokov
+Number of Issues Created: 0
+Number of Issues Assigned: 1
+Number of Issues Resolved: 1
+Average Issue Resolution Time (hours): 59638.97
+--------------------------------------------------------------------------------
+Developer Name: MashaKorax
+Number of Issues Created: 0
+Number of Issues Assigned: 1
+Number of Issues Resolved: 1
+Average Issue Resolution Time (hours): 54765.66
+--------------------------------------------------------------------------------
+Developer Name: kseniiaguzeeva
+Number of Issues Created: 0
+Number of Issues Assigned: 4
+Number of Issues Resolved: 4
+Average Issue Resolution Time (hours): 22973.42
+--------------------------------------------------------------------------------
+Developer Name: AndrewKhitrin
+Number of Issues Created: 1
+Number of Issues Assigned: 1
+Number of Issues Resolved: 1
+Average Issue Resolution Time (hours): 4441.65
+--------------------------------------------------------------------------------
+Developer Name: n5a5
+Number of Issues Created: 0
+Number of Issues Assigned: 1
+Number of Issues Resolved: 1
+Average Issue Resolution Time (hours): 29544.52
+--------------------------------------------------------------------------------
