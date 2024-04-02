@@ -1,6 +1,49 @@
 import requests
 import config
+from dataclasses import dataclass
+
 github_key = config.GITHUB_KEY
+
+@dataclass
+class Developer:
+    """Class for keeping track of developer contributions."""
+    name: str
+    prs: dict = None
+
+    def add_pull_request(self, pr_number, reviews):
+        if self.prs is None:
+            self.prs = {}
+        self.prs[pr_number] = reviews
+
+class GitDevelopers:
+    def __init__(self, prs):
+        self.devs = {}
+        self.populate_git_developers(prs)
+
+    def add_new_developer(self, name):
+        self.devs[name] = Developer(name=name)
+
+    def populate_git_developers(self, prs):
+        for pr in prs:
+            for review in prs[pr]:
+                author = review['author']
+                if author not in self.devs:
+                    self.add_new_developer(author)
+                self.devs[author].add_pull_request(pr, prs[pr])
+
+    def display_pr_reviews(self, filtered_devs=None):
+        for developer, dev_obj in self.devs.items():
+            if filtered_devs and developer not in filtered_devs:
+                continue
+            print(f"Reviews by Developer: {developer}")
+            print("-" * 60)
+            for pr_number, reviews in dev_obj.prs.items():
+                print(f"Pull Request #{pr_number}:")
+                for review in reviews:
+                    print(f"Author: {review['author']}, State: {review['state']}, Text: {review['text']}")
+                print("-" * 60)
+    
+    
 
 def pr_reviews(token, owner, repo_name, max_prs=None):
     url = "https://api.github.com/graphql"
@@ -86,14 +129,14 @@ def pr_reviews(token, owner, repo_name, max_prs=None):
 
     return pr_reviews_dict
 
-def display_reviews(pr_reviews_dict):
-    print("Pull Request Reviews:")
-    print("-" * 60)
-    for pr_number, reviews in pr_reviews_dict.items():
-        print(f"Pull Request #{pr_number}:")
-        for review in reviews:
-            print(f"Author: {review['author']}, State: {review['state']}, Text: {review['text']}")
-        print("-" * 60)
+# def display_reviews(pr_reviews_dict):
+#     print("Pull Request Reviews:")
+#     print("-" * 60)
+#     for pr_number, reviews in pr_reviews_dict.items():
+#         print(f"Pull Request #{pr_number}:")
+#         for review in reviews:
+#             print(f"Author: {review['author']}, State: {review['state']}, Text: {review['text']}")
+#         print("-" * 60)
 
 repo_url = "https://github.com/bumptech/glide"
 
@@ -103,4 +146,7 @@ owner, repo_name = repo_url.split('/')[-2:]
 reviews = pr_reviews(github_key, owner, repo_name)
 
 # Display the reviews associated with pull requests
-display_reviews(reviews)
+# display_reviews(reviews)
+
+git_devs = GitDevelopers(reviews)
+git_devs.display_pr_reviews(filtered_devs=['phoenixli'])
