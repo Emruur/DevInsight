@@ -45,11 +45,12 @@ class SentimentAnalyzer:
 
 
 
-analyzer= SentimentAnalyzer()
+if __name__=="__main__":
+    analyzer= SentimentAnalyzer()
 
-print(f"Ultra Positive: {analyzer.get_sentiment('This is really good, nice job, amazing, the best thing i have ever seen!')}")
-print(f"Positive: {analyzer.get_sentiment('This is really good, nice job!')}")
-print(f"Good: {analyzer.get_sentiment('Looks good thanks!')}")
-print(f"Neutral: {analyzer.get_sentiment('This is a automatic response.')}")
-print(f"Negativish: {analyzer.get_sentiment('Please run gradlew check locally, there seems to be some violation; probably a long line.')}")
-print(f"Negativish: {analyzer.get_sentiment('This sucks, really bad pr, shame on you')}")
+    print(f"Ultra Positive: {analyzer.get_sentiment('This is really good, nice job, amazing, the best thing i have ever seen!')}")
+    print(f"Positive: {analyzer.get_sentiment('This is really good, nice job!')}")
+    print(f"Good: {analyzer.get_sentiment('Looks good thanks!')}")
+    print(f"Neutral: {analyzer.get_sentiment('This is a automatic response.')}")
+    print(f"Negativish: {analyzer.get_sentiment('Please run gradlew check locally, there seems to be some violation; probably a long line.')}")
+    print(f"Negativish: {analyzer.get_sentiment('This sucks, really bad pr, shame on you')}")
