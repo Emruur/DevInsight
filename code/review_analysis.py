@@ -1,6 +1,7 @@
 import requests
 import config
 from dataclasses import dataclass
+import csv
 
 github_key = config.GITHUB_KEY
 
@@ -42,6 +43,18 @@ class GitDevelopers:
                 for review in reviews:
                     print(f"Author: {review['author']}, State: {review['state']}, Text: {review['text']}")
                 print("-" * 60)
+
+    def create_reviews_csv(self, filtered_devs=None):
+        for developer, dev_obj in self.devs.items():
+            if filtered_devs and developer not in filtered_devs:
+                continue
+            with open(f"{developer}_reviews.csv", mode='w') as csv_file:
+                fieldnames = ['PR Number', 'Author', 'State', 'Text']
+                writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+                writer.writeheader()
+                for pr_number, reviews in dev_obj.prs.items():
+                    for review in reviews:
+                        writer.writerow({'PR Number': pr_number, 'Author': review['author'], 'State': review['state'], 'Text': review['text']})
     
     
 
@@ -149,4 +162,6 @@ reviews = pr_reviews(github_key, owner, repo_name)
 # display_reviews(reviews)
 
 git_devs = GitDevelopers(reviews)
-git_devs.display_pr_reviews(filtered_devs=['phoenixli'])
+git_devs.display_pr_reviews(filtered_devs=['kanelbulle'])
+git_devs.create_reviews_csv()
+
