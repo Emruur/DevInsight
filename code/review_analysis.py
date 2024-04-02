@@ -11,10 +11,10 @@ class Developer:
     name: str
     prs: dict = None
 
-    def add_pull_request(self, pr_number, reviews, comments):
+    def add_pull_request(self, pr_number, reviews, comments, commits):
         if self.prs is None:
             self.prs = {}
-        self.prs[pr_number] = {'reviews': reviews, 'comments': comments}
+        self.prs[pr_number] = {'reviews': reviews, 'comments': comments, 'commits': commits}
 
 class GitDevelopers:
     def __init__(self, prs):
@@ -28,11 +28,12 @@ class GitDevelopers:
         for pr in prs:
             reviews = prs[pr]['reviews']
             comments = prs[pr]['comments']
+            commits = prs[pr]['commits']
             for review in reviews:
                 author = review['author']
                 if author not in self.devs:
                     self.add_new_developer(author)
-                self.devs[author].add_pull_request(pr, reviews, comments)
+                self.devs[author].add_pull_request(pr, reviews, comments, commits)
 
     def display_pr_reviews(self, filtered_devs=None):
         for developer, dev_obj in self.devs.items():
@@ -50,23 +51,34 @@ class GitDevelopers:
                     print(f"\tAuthor: {comment['author']}, Text: {comment['text']}")
                 print("-" * 60)
 
+    def display_pr_commits(self, filtered_devs=None):
+        for developer, dev_obj in self.devs.items():
+            if filtered_devs and developer not in filtered_devs:
+                continue
+            print(f"Commits by Developer: {developer}")
+            print("-" * 60)
+            for pr_number, data in dev_obj.prs.items():
+                print(f"Pull Request #{pr_number}:")
+                print("Commits:")
+                for commit_author in data['commits']:  # Iterate over commit authors
+                    print(f"\tAuthor: {commit_author}")
+                print("-" * 60)
+
+
     def create_reviews_csv(self, filtered_devs=None):
         for developer, dev_obj in self.devs.items():
             if filtered_devs and developer not in filtered_devs:
                 continue
             with open(f"{developer}_reviews_and_comments.csv", mode='w') as csv_file:
-                fieldnames = ['PR Number', 'Review Author', 'Review State', 'Review Text', 'Comment Author', 'Comment Text']
+                fieldnames = ['PR Number', 'Review/Comment Author', 'Review/Comment Text']
                 writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
                 writer.writeheader()
                 for pr_number, data in dev_obj.prs.items():
                     for review in data['reviews']:
-                        for comment in data['comments']:
-                            writer.writerow({'PR Number': pr_number, 
-                                             'Review Author': review['author'], 
-                                             'Review State': review['state'], 
-                                             'Review Text': review['text'],
-                                             'Comment Author': comment['author'], 
-                                             'Comment Text': comment['text']})
+                        writer.writerow({'PR Number': pr_number, 'Review/Comment Author': review['author'], 'Review/Comment Text': review['text']})
+                    for comment in data['comments']:
+                        writer.writerow({'PR Number': pr_number, 'Review/Comment Author': comment['author'], 'Review/Comment Text': comment['text']})
+                
 
 def pr_reviews(token, owner, repo_name, max_prs=None):
     url = "https://api.github.com/graphql"
@@ -83,6 +95,19 @@ def pr_reviews(token, owner, repo_name, max_prs=None):
                         url
                         createdAt
                         number
+                        commits(first: 100) {
+                            edges {
+                                node {
+                                    commit {
+                                        author {
+                                            user {
+                                                login
+                                            }
+                                        }   
+                                    }
+                                }
+                            }
+                        }
                         comments(first: 100) {
                             edges {
                                 node {
@@ -104,7 +129,6 @@ def pr_reviews(token, owner, repo_name, max_prs=None):
                                 }
                             }
                         }
-
                     }
                     cursor
                 }
@@ -116,7 +140,6 @@ def pr_reviews(token, owner, repo_name, max_prs=None):
         }
     }
     """
-
     pr_reviews_dict = {}
     variables = {
         "owner": owner,
@@ -145,7 +168,8 @@ def pr_reviews(token, owner, repo_name, max_prs=None):
                     pr_number = node['number']
                     comments = node['comments']['edges']
                     reviews = node['reviews']['edges']
-                    pr_reviews_dict[pr_number] = {'reviews': [], 'comments': []}
+                    commits = node['commits']['edges']
+                    pr_reviews_dict[pr_number] = {'reviews': [], 'comments': [], 'commits': []}  # Ensure 'commits' key is initialized
                     for review in reviews:
                         review_node = review['node']
                         author = review_node['author']['login'] if review_node['author'] else 'Unknown'
@@ -158,6 +182,14 @@ def pr_reviews(token, owner, repo_name, max_prs=None):
                         author = comment_node['author']['login'] if comment_node['author'] else 'Unknown'
                         text = comment_node['bodyText']
                         pr_reviews_dict[pr_number]['comments'].append({'author': author, 'text': text})    
+
+                    for commit in commits:
+                        commit_node = commit['node']
+                        author_login = None
+                        if commit_node['commit']['author']['user'] is not None:
+                            author_login = commit_node['commit']['author']['user']['login']
+                        pr_reviews_dict[pr_number]['commits'].append(author_login)
+
 
                 # Check if there are more pages
                 page_info = data['data']['repository']['pullRequests']['pageInfo']
@@ -178,5 +210,7 @@ owner, repo_name = repo_url.split('/')[-2:]
 reviews = pr_reviews(github_key, owner, repo_name)
 
 git_devs = GitDevelopers(reviews)
-git_devs.display_pr_reviews(filtered_devs=['michaeimm'])
-git_devs.create_reviews_csv(filtered_devs=['michaeimm'])
+git_devs.display_pr_reviews(filtered_devs=['TWiStErRob'])
+git_devs.create_reviews_csv(filtered_devs=['TWiStErRob'])
+git_devs.display_pr_commits(filtered_devs=['TWiStErRob'])
+
