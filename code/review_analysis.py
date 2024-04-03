@@ -2,7 +2,7 @@ import requests
 import config
 from dataclasses import dataclass
 import csv
-
+from sentiment_analysis import SentimentAnalyzer
 github_key = config.GITHUB_KEY
 
 @dataclass
@@ -80,7 +80,7 @@ class GitDevelopers:
                         writer.writerow({'PR Number': pr_number, 'Review/Comment Author': comment['author'], 'Review/Comment Text': comment['text']})
                 
 
-def pr_reviews(token, owner, repo_name, max_prs=None):
+def pr_reviews(token, owner, repo_name):
     url = "https://api.github.com/graphql"
     headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
 
@@ -202,15 +202,77 @@ def pr_reviews(token, owner, repo_name, max_prs=None):
 
     return pr_reviews_dict
 
+def print_pr_reviews(pr_reviews_dict):
+    for pr_number, pr_details in pr_reviews_dict.items():
+        print(f"Pull Request #{pr_number}:")
+        print("  Reviews:")
+        for review in pr_details['reviews']:
+            print(f"    - Author: {review['author']}, State: {review['state']}")
+            print(f"      Text: {review['text']}\n")
+
+        print("  Comments:")
+        for comment in pr_details['comments']:
+            print(f"    - Author: {comment['author']}")
+            print(f"      Text: {comment['text']}\n")
+
+        print("  Commits:")
+        for commit_author in pr_details['commits']:
+            author = commit_author if commit_author else 'Unknown'
+            print(f"    - Author: {author}")
+        print("-" * 40)  # Separator for readability
+
+def analyze_sentiments(pr_reviews_dict) -> dict[int, float]:
+    '''
+    Returns a dictionary for PR review sentiment scores: dict[pr_number, average_score]
+    '''
+    analyzer = SentimentAnalyzer()
+    # Stores, for a PR -> (total PR score, number of reviews/comments)
+    sentiment_dict: dict[int, (float, int)] = {}
+
+    for pr_number, pr_details in pr_reviews_dict.items():
+        total_score = 0.0
+        count = 0
+
+        for review in pr_details['reviews']:
+            if review["text"] != "":
+                score = analyzer.get_sentiment(review['text'])
+                total_score += score
+                count += 1
+
+        for comment in pr_details['comments']:
+            if comment["text"] != "":
+                score = analyzer.get_sentiment(comment['text'])
+                total_score += score
+                count += 1
+
+        sentiment_dict[pr_number] = (total_score, count)
+
+    # Calculate the average score for each PR, ensuring not to divide by zero
+    return {pr_no: pr_score / num_prs if num_prs != 0 else 0 for pr_no, (pr_score, num_prs) in sentiment_dict.items()}
+
+
+
 repo_url = "https://github.com/bumptech/glide"
 
 # Extract repo owner and name from the URL
 owner, repo_name = repo_url.split('/')[-2:]
 
 reviews = pr_reviews(github_key, owner, repo_name)
+pr_sentiments= analyze_sentiments(reviews)
 
+# TODO credit the pr contributors
+# TODO should we account for comments of contributors?
+
+for pr_no, score in pr_sentiments.items():
+    print(f"PR{pr_no} : {score}")
+
+
+
+'''
 git_devs = GitDevelopers(reviews)
 git_devs.display_pr_reviews(filtered_devs=['TWiStErRob'])
-git_devs.create_reviews_csv(filtered_devs=['TWiStErRob'])
+#git_devs.create_reviews_csv(filtered_devs=['TWiStErRob'])
 git_devs.display_pr_commits(filtered_devs=['TWiStErRob'])
+
+'''
 
