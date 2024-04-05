@@ -17,14 +17,10 @@ classDiagram
         +get_repo_prs(): dict
     }
 
-    class DevIssues {
-        -name: string
-        -num_of_issues_created: int
-        -num_of_issues_assigned: int
-        -num_of_issues_resolved: int
-        -total_resolution_time: float
-        +average_issue_resolution_time: float
-        +update_resolution_metrics(resolution_time): void
+    class Analyzer {
+        +issueAnalysis: IssueAnalysis
+        +commitAnalysis: CommitAnalysis
+        +sentimentalAnalysis: SentimentalAnalysis
     }
 
     class IssueAnalysis {
@@ -36,13 +32,14 @@ classDiagram
         +display(filter_assignees): void
     }
 
-    class DevCommits {
+    class DevIssues {
         -name: string
-        -username: string
-        -num_of_commits: int
-        -num_of_add: int
-        -num_of_delete: int
-        -num_of_files_changed: int
+        -num_of_issues_created: int
+        -num_of_issues_assigned: int
+        -num_of_issues_resolved: int
+        -total_resolution_time: float
+        +average_issue_resolution_time: float
+        +update_resolution_metrics(resolution_time): void
     }
 
     class CommitAnalysis {
@@ -52,12 +49,13 @@ classDiagram
         +__str__(): string
     }
 
-    class DevSentiments {
+    class DevCommits {
         -name: string
-        -total_sentiment_score: float
-        -num_of_contributed_prs: int
-        +add_score(score): void
-        +get_sentiment_score(): float
+        -username: string
+        -num_of_commits: int
+        -num_of_add: int
+        -num_of_delete: int
+        -num_of_files_changed: int
     }
 
     class SentimentalAnalysis {
@@ -69,18 +67,26 @@ classDiagram
         +analyze_sentiments(pr_reviews_dict): dictionary
     }
 
+    class DevSentiments {
+        -name: string
+        -total_sentiment_score: float
+        -num_of_contributed_prs: int
+        +add_score(score): void
+        +get_sentiment_score(): float
+    }
+
     class SentimentAnalyzer {
         -analyzer: SentimentIntensityAnalyzer
         +get_sentiment(text): float
         +preprocess_text(text): string
     }
 
-    GitHubFetcher --|> IssueAnalysis: Uses
-    GitHubFetcher --|> CommitAnalysis: Uses
-    GitHubFetcher --|> SentimentalAnalysis: Uses
-    IssueAnalysis --> DevIssues: Manages
-    CommitAnalysis --> DevCommits: Manages
-    SentimentalAnalysis --> DevSentiments: Manages
+    Analyzer "1" *-- "1" IssueAnalysis: Contains
+    Analyzer "1" *-- "1" CommitAnalysis: Contains
+    Analyzer "1" *-- "1" SentimentalAnalysis: Contains
+    IssueAnalysis "1" *-- "*" DevIssues: Contains
+    CommitAnalysis "1" *-- "*" DevCommits: Contains
+    SentimentalAnalysis "1" *-- "*" DevSentiments: Contains
     SentimentalAnalysis ..> SentimentAnalyzer: Uses
 
 ```
