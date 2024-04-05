@@ -23,7 +23,7 @@ sequenceDiagram
         F->>B: Sends repo URL
         B->>GHF: Initializes with token, repo URL
         GHF->>GHF: Parses URL, fetches data
-        GHF->>FS: Writes analysis to JSON
+        GHF->>FS: Writes repo data JSON
         B-->>F: Analysis complete
         F-->>U: Notifies user
         U->>F: Selects view analysis for a repo
@@ -47,7 +47,12 @@ sequenceDiagram
     B->>A: Initialize Analyzer with data
     A->>B: Analysis ready
     B-->>F: Sends analysis to frontend
-    F-->>U: Displays analysis details
+    F-->>U: Displays analysis details, including Dev Cards with preloaded info
+    U->>F: Chooses to sort Dev Cards
+    F->>F: Sorts Dev Cards based on selected feature
+    F-->>U: Displays sorted Dev Cards
+    U->>F: Clicks on a Dev Card
+    F->>U: Displays dev-specific info in a popup using preloaded data
 
 ```
 
