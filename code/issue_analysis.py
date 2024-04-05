@@ -4,6 +4,7 @@ import config
 import requests
 from dataclasses import dataclass
 from datetime import datetime
+from GithubFetcher import GitHubFetcher
 
 # Use the API keys from config.py
 github_key = config.GITHUB_KEY
@@ -89,99 +90,10 @@ class GitDevelopers:
             print("-" * 80)
 
 
-def fetch_all_issues(token, owner, repo_name, max_issues=None):
-    url = 'https://api.github.com/graphql'
-    headers = {'Authorization': f'Bearer {token}', 'Content-Type': 'application/json'}
-
-    # GraphQL query template to fetch issues
-    query_template = """
-    query ($owner: String!, $repoName: String!, $count: Int!, $issuesCursor: String) {
-    repository(owner: $owner, name: $repoName) {
-        issues(first: $count, after: $issuesCursor) {
-        edges {
-            node {
-            title
-            url
-            createdAt
-            closedAt
-            state
-            author {
-                login
-            }
-            assignees(first: 10) {
-                edges {
-                node {
-                    login
-                }
-                }
-            }
-            number
-            }
-            cursor
-        }
-        pageInfo {
-            endCursor
-            hasNextPage
-        }
-        }
-    }
-    }
-    """
-
-    all_issues = []
-    issues_cursor = None
-
-    while True:
-        issues_fetch_count = 100 if max_issues is None else min(100, max_issues - len(all_issues))
-        variables = {'owner': owner, 'repoName': repo_name, 'count': issues_fetch_count, 'issuesCursor': issues_cursor}
-
-        response = requests.post(url, json={'query': query_template, 'variables': variables}, headers=headers)
-        if response.status_code == 200:
-            data = response.json()
-            issues = data['data']['repository']['issues']['edges']
-            all_issues.extend(issues[:issues_fetch_count])
-            if len(issues) == issues_fetch_count and data['data']['repository']['issues']['pageInfo']['hasNextPage']:
-                issues_cursor = issues[-1]['cursor']
-            else:
-                issues_cursor = None
-
-            if issues_cursor is None or (max_issues is not None and len(all_issues) >= max_issues):
-                break
-        else:
-            print(f"Query failed to run with a {response.status_code}")
-            break
-
-    return all_issues[:max_issues]
-
-
-
-
-def display_issues(issues):
-    print("GitHub Issues:")
-    print("-" * 60)
-    for issue in issues:
-        node = issue['node']
-        print(f"Title: {node['title']}")
-        print(f"URL: {node['url']}")
-        print(f"Created At: {node['createdAt']}")
-        print(f"Closed At: {node['closedAt'] if node['closedAt'] else 'Not Closed'}")
-        print(f"State: {node['state']}")
-        print(f"Author: {node['author']['login'] if node['author'] else 'Unknown'}")
-
-        assignees = [assignee['node']['login'] for assignee in node['assignees']['edges']]
-        print(f"Assignees: {', '.join(assignees) if assignees else 'None'}")
-
-        print(f"Issue Number: {node['number']}")
-        print("-" * 60)
-
-
 repo_url = "https://github.com/dbeaver/dbeaver"
 
-# Extract repo owner and name from the URL
-owner, repo_name = repo_url.split('/')[-2:]
-
-# Fetch merged PRs
-all_issues = fetch_all_issues(github_key, owner, repo_name, max_issues=None)
+fetcher= GitHubFetcher(github_key, repo_url)
+all_issues= fetcher.fetch_all_issues()
 
 dev_info= GitDevelopers(all_issues)
 
