@@ -82,8 +82,6 @@ class SentimentalAnalysis:
         return {pr_no: pr_score / num_prs if num_prs != 0 else 0 for pr_no, (pr_score, num_prs) in sentiment_dict.items()}
 
 
-
-
 if __name__ == "__main__":
     repo_url = "https://github.com/bumptech/glide"
 
