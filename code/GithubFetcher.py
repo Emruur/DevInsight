@@ -26,9 +26,9 @@ class GitHubFetcher:
         The file is named after the repository, includes a timestamp, and is stored under a directory named 'fetched_data'.
         """
         # Fetch the data
-        developers_and_commits = self.fetch_developers_and_commits()
-        all_issues = self.fetch_all_issues()
-        pr_reviews = self.pr_reviews()
+        developers_and_commits = self.get_dev_commits()
+        all_issues = self.get_repo_issues()
+        pr_reviews = self.get_repo_prs()
 
         # Add a timestamp to the data
         timestamp = datetime.now().isoformat()
@@ -94,7 +94,7 @@ class GitHubFetcher:
             raise ValueError("Invalid repository URL")
         return path_parts
 
-    def fetch_developers_and_commits(self):
+    def get_dev_commits(self):
 
         query = f"""
         query {{
@@ -130,7 +130,7 @@ class GitHubFetcher:
         else:
             raise Exception(f"Failed to fetch developers and commits. Status code: {response.status_code}")
 
-    def fetch_all_issues(self, max_issues=None):
+    def get_repo_issues(self, max_issues=None):
         all_issues = []
         issues_cursor = None
         query_template = """
@@ -188,7 +188,7 @@ class GitHubFetcher:
 
         return all_issues[:max_issues]
 
-    def pr_reviews(self):
+    def get_repo_prs(self):
         url = "https://api.github.com/graphql"
         headers = {"Authorization": f"Bearer {self.token}", "Content-Type": "application/json"}
 
@@ -309,41 +309,12 @@ class GitHubFetcher:
                         break
 
         return pr_reviews_dict
-    
-    def _process_pull_request(self, pr, pr_reviews_dict):
-        node = pr['node']
-        pr_number = node['number']
-        comments = node['comments']['edges']
-        reviews = node['reviews']['edges']
-        commits = node['commits']['edges']
-        pr_reviews_dict[pr_number] = {'reviews': [], 'comments': [], 'commits': []}  # Ensure 'commits' key is initialized
-        for review in reviews:
-            review_node = review['node']
-            author = review_node['author']['login'] if review_node['author'] else 'Unknown'
-            state = review_node['state']
-            text = review_node['bodyText']
-            pr_reviews_dict[pr_number]['reviews'].append({'author': author, 'state': state, 'text': text})
-
-        for comment in comments:
-            comment_node = comment['node']
-            author = comment_node['author']['login'] if comment_node['author'] else 'Unknown'
-            text = comment_node['bodyText']
-            pr_reviews_dict[pr_number]['comments'].append({'author': author, 'text': text})    
-
-        for commit in commits:
-            commit_node = commit['node']
-            author_login = None
-            if commit_node['commit']['author']['user'] is not None:
-                author_login = commit_node['commit']['author']['user']['login']
-            pr_reviews_dict[pr_number]['commits'].append(author_login)
-
 
 if __name__ == "__main__":
     key= config.GITHUB_KEY
-    repo_url = "https://github.com/bumptech/glide"
+    repo_url = "https://github.com/dbeaver/dbeaver"
     fetcher= GitHubFetcher(key, repo_url)
     #fetcher.save_data()
-
     data = fetcher.fetch_saved_data()
 
     commits= data['developers_and_commits']
