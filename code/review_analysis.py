@@ -1,14 +1,11 @@
-import requests
 import config
 from dataclasses import dataclass
-import csv
 from sentiment_analysis import SentimentAnalyzer
-from GithubFetcher import GitHubFetcher
 
 github_key = config.GITHUB_KEY
 
 @dataclass        
-class Developer:
+class DevSentiments:
     name: str
     total_sentiment_score: float = 0.0
     num_of_contributed_prs: int = 0
@@ -26,18 +23,19 @@ class Developer:
         return self.total_sentiment_score / self.num_of_contributed_prs
 
 @dataclass 
-class DeveloperSentiments:
-    dev_dict: dict[str, Developer]
+class SentimentalAnalysis:
+    dev_dict: dict[str, DevSentiments]
 
-    def __init__(self, pr_sentiments, pr_reviews_dict) -> None:
+    def __init__(self,pr_reviews_dict) -> None:
         self.dev_dict = {}
+        pr_sentiments= SentimentalAnalysis.analyze_sentiments(pr_reviews_dict)
         self.credit_pr_commiters(pr_sentiments, pr_reviews_dict)
 
     def add_developer_score(self, score: float, dev_name: str) -> None:
         if dev_name in self.dev_dict:
             self.dev_dict[dev_name].add_score(score)
         else:
-            new_developer = Developer(name=dev_name)
+            new_developer = DevSentiments(name=dev_name)
             new_developer.add_score(score)
             self.dev_dict[dev_name] = new_developer
 
@@ -54,49 +52,50 @@ class DeveloperSentiments:
             developers_summary.append(f"{dev_name}: Sentiment Score = {developer.get_sentiment_score():.2f}, PRs Contributed = {developer.num_of_contributed_prs}")
         return "\n".join(developers_summary)
 
-def analyze_sentiments(pr_reviews_dict) -> dict[int, float]:
-    '''
-    Returns a dictionary for PR review sentiment scores: dict[pr_number, average_score]
-    '''
-    analyzer = SentimentAnalyzer()
-    # Stores, for a PR -> (total PR score, number of reviews/comments)
-    sentiment_dict: dict[int, (float, int)] = {}
+    def analyze_sentiments(pr_reviews_dict) -> dict[int, float]:
+        '''
+        Returns a dictionary for PR review sentiment scores: dict[pr_number, average_score]
+        '''
+        analyzer = SentimentAnalyzer()
+        # Stores, for a PR -> (total PR score, number of reviews/comments)
+        sentiment_dict: dict[int, (float, int)] = {}
 
-    for pr_number, pr_details in pr_reviews_dict.items():
-        total_score = 0.0
-        count = 0
+        for pr_number, pr_details in pr_reviews_dict.items():
+            total_score = 0.0
+            count = 0
 
-        for review in pr_details['reviews']:
-            if review["text"] != "":
-                score = analyzer.get_sentiment(review['text'])
-                total_score += score
-                count += 1
+            for review in pr_details['reviews']:
+                if review["text"] != "":
+                    score = analyzer.get_sentiment(review['text'])
+                    total_score += score
+                    count += 1
 
-        for comment in pr_details['comments']:
-            if comment["text"] != "":
-                score = analyzer.get_sentiment(comment['text'])
-                total_score += score
-                count += 1
+            for comment in pr_details['comments']:
+                if comment["text"] != "":
+                    score = analyzer.get_sentiment(comment['text'])
+                    total_score += score
+                    count += 1
 
-        sentiment_dict[pr_number] = (total_score, count)
+            sentiment_dict[pr_number] = (total_score, count)
 
-    # Calculate the average score for each PR, ensuring not to divide by zero
-    return {pr_no: pr_score / num_prs if num_prs != 0 else 0 for pr_no, (pr_score, num_prs) in sentiment_dict.items()}
-
-
-
-repo_url = "https://github.com/bumptech/glide"
-
-fetcher= GitHubFetcher(github_key, repo_url)
+        # Calculate the average score for each PR, ensuring not to divide by zero
+        return {pr_no: pr_score / num_prs if num_prs != 0 else 0 for pr_no, (pr_score, num_prs) in sentiment_dict.items()}
 
 
-reviews = fetcher.pr_reviews()
-pr_sentiments= analyze_sentiments(reviews)
 
-dev_sentiments= DeveloperSentiments(pr_sentiments,reviews)
 
-print(dev_sentiments)
-# TODO should we account for comments of contributors?
+if __name__ == "__main__":
+    repo_url = "https://github.com/bumptech/glide"
+
+    fetcher= GitHubFetcher(github_key, repo_url)
+
+
+    reviews = fetcher.pr_reviews()
+
+    dev_sentiments= SentimentalAnalysis(reviews)
+
+    print(dev_sentiments)
+    # TODO should we account for comments of contributors?
 
 
 

@@ -4,14 +4,13 @@ import config
 import requests
 from dataclasses import dataclass
 from datetime import datetime
-from GithubFetcher import GitHubFetcher
 
 # Use the API keys from config.py
 github_key = config.GITHUB_KEY
 gemini_key = config.GEMINI_KEY
 
 @dataclass
-class Developer:
+class DevIssues:
     """Class for keeping track of developer contributions."""
     name: str
     num_of_issues_created: int = 0
@@ -32,13 +31,13 @@ class Developer:
             self.total_resolution_time += resolution_time
 
 
-class GitDevelopers:
+class IssueAnalysis:
     def __init__(self, issues):
         self.devs = {}
         self.populate_git_developers(issues)
 
     def add_new_developer(self, name):
-        self.devs[name] = Developer(name=name)
+        self.devs[name] = DevIssues(name=name)
 
     def update_developer(self, name, issue_created=False, issue_assigned=False, resolution_time=None):
         if issue_created:
@@ -90,14 +89,15 @@ class GitDevelopers:
             print("-" * 80)
 
 
-repo_url = "https://github.com/dbeaver/dbeaver"
+if __name__ == "main":
+    repo_url = "https://github.com/dbeaver/dbeaver"
 
-fetcher= GitHubFetcher(github_key, repo_url)
-all_issues= fetcher.fetch_all_issues()
+    fetcher= GitHubFetcher(github_key, repo_url)
+    all_issues= fetcher.fetch_all_issues()
 
-dev_info= GitDevelopers(all_issues)
+    dev_info= IssueAnalysis(all_issues)
 
-dev_info.display(filter_assignees=True)
+    dev_info.display(filter_assignees=True)
 
 
 

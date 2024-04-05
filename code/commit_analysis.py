@@ -2,11 +2,10 @@ import requests
 from dataclasses import dataclass
 from urllib.parse import urlparse
 import config
-from GithubFetcher import GitHubFetcher
 github_token= config.GITHUB_KEY
 
 @dataclass
-class Developer:
+class DevCommits:
     """Class for keeping track of a developer's contributions."""
     name: str
     username: str
@@ -16,8 +15,8 @@ class Developer:
     num_of_files_changed: int = 0
 
 @dataclass
-class GitDevelopers:
-    devs: dict[str, Developer] = None
+class CommitAnalysis:
+    devs: dict[str, DevCommits] = None
 
     def __init__(self, data):
         self.devs = {}
@@ -33,7 +32,7 @@ class GitDevelopers:
             files_changed = edge['node']['changedFiles']
 
             if author_name not in self.devs:
-                self.devs[author_name] = Developer(name=author_name, username=author_username, num_of_commits=1,
+                self.devs[author_name] = DevCommits(name=author_name, username=author_username, num_of_commits=1,
                                                   num_of_add=additions, num_of_delete=deletions,
                                                   num_of_files_changed=files_changed)
             else:
@@ -59,14 +58,15 @@ class GitDevelopers:
 
         return header
 
-# Example usage:
-repo_url = "https://github.com/python-mode/python-mode"
-#raw_data = fetch_developers_and_commits(repo_url, github_token)
-fetcher= GitHubFetcher(github_token,repo_url)
-raw_data= fetcher.fetch_developers_and_commits()
+if __name__ == "__main__":
+    # Example usage:
+    repo_url = "https://github.com/python-mode/python-mode"
+    #raw_data = fetch_developers_and_commits(repo_url, github_token)
+    fetcher= GitHubFetcher(github_token,repo_url)
+    raw_data= fetcher.fetch_developers_and_commits()
 
-# Initialize GitDevelopers with raw data
-git_developers = GitDevelopers(raw_data)
+    # Initialize GitDevelopers with raw data
+    git_developers = CommitAnalysis(raw_data)
 
-# Print summary
-print(git_developers)
+    # Print summary
+    print(git_developers)
