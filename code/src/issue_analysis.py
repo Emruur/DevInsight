@@ -75,18 +75,28 @@ class IssueAnalysis:
                 #TODO what do we do in case of no assignees, should we add this to the creator?
                 pass
 
-    def display(self, filter_assignees= False):
-        print("GitHub Developers' Statistics:")
-        print("-" * 80)
+    def get_dev_stats_as_json(self, filter_assignees=False):
+        dev_stats = {}
         for name, dev in self.devs.items():
             if filter_assignees and dev.num_of_issues_assigned == 0:
                 continue
-            print(f"Developer Name: {name}")
-            print(f"Number of Issues Created: {dev.num_of_issues_created}")
-            print(f"Number of Issues Assigned: {dev.num_of_issues_assigned}")
-            print(f"Number of Issues Resolved: {dev.num_of_issues_resolved}")
-            print(f"Average Issue Resolution Time (hours): {dev.average_issue_resolution_time:.2f}")
-            print("-" * 80)
+            dev_stats[name] = {
+                'Number of Issues Created': dev.num_of_issues_created,
+                'Number of Issues Assigned': dev.num_of_issues_assigned,
+                'Number of Issues Resolved': dev.num_of_issues_resolved,
+                'Average Issue Resolution Time': round(dev.average_issue_resolution_time, 2)
+            }
+        return dev_stats
+
+    def __str__(self, filter_assignees=False):
+        dev_stats = self.get_dev_stats_as_json(filter_assignees)
+        display_str = "GitHub Developers' Statistics:\n"
+        display_str += "-" * 80 + "\n"
+        for name, stats in dev_stats.items():
+            display_str += f"Developer Name: {name}\n"
+            display_str += '\n'.join([f"{k}: {v}" for k, v in stats.items()])
+            display_str += "\n" + "-" * 80 + "\n"
+        return display_str
 
 
 if __name__ == "main":

@@ -41,20 +41,37 @@ class CommitAnalysis:
                 self.devs[author_name].num_of_delete += deletions
                 self.devs[author_name].num_of_files_changed += files_changed
 
-    def __str__(self):
-        # Determine the maximum lengths for dynamic column widths
-        max_name_len = max(len(dev.name) for dev in self.devs.values())
-        max_username_len = max(len(dev.username) if dev.username else 0 for dev in self.devs.values())
+    def get_contributors_as_json(self):
+        contributors_json = {}
+        for name, dev in self.devs.items():
+            contributors_json[name] = {
+                'Developer Name': dev.name,
+                'GitHub Username': dev.username,
+                'Number of Commits': dev.num_of_commits,
+                'Additions': dev.num_of_add,
+                'Deletions': dev.num_of_delete,
+                'Files Changed': dev.num_of_files_changed
+            }
+        return contributors_json
 
+    def __str__(self):
+        contributors_json = self.get_contributors_as_json()
+        
+        # Determine the maximum lengths for dynamic column widths
+        max_name_len = max(len(info['Developer Name']) for info in contributors_json.values())
+        max_username_len = max(len(info['GitHub Username']) if info['GitHub Username'] else 0 for info in contributors_json.values())
+        
         # Prepare the header with appropriate spacing
         header_format = "{:<" + str(max_name_len + 2) + "}{:<" + str(max_username_len + 2) + "}{:>15}{:>12}{:>12}{:>15}\n"
         header = header_format.format("Developer Name", "GitHub Username", "Number of Commits", "Additions", "Deletions", "Files Changed")
         header += "-" * (max_name_len + max_username_len + 56) + "\n"
-
+        
         # Format each developer row
         row_format = "{:<" + str(max_name_len + 2) + "}{:<" + str(max_username_len + 2) + "}{:>15}{:>12}{:>12}{:>15}\n"
-        for developer, data in self.devs.items():
-            header += row_format.format(data.name, data.username or '', data.num_of_commits, data.num_of_add, data.num_of_delete, data.num_of_files_changed)
+        for dev_info in contributors_json.values():
+            header += row_format.format(dev_info['Developer Name'], dev_info['GitHub Username'] or '', 
+                                        dev_info['Number of Commits'], dev_info['Additions'], 
+                                        dev_info['Deletions'], dev_info['Files Changed'])
 
         return header
 

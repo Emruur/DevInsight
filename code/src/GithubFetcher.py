@@ -87,6 +87,28 @@ class GitHubFetcher:
             print(f"No saved data found for the repository '{self.repo_name}'.")
             return None
         
+    def fetch_data(self):
+        """
+        Fetches all data related to developers, issues, and pull requests for the specified repository,
+        adds a timestamp and repository name, and returns it.
+        """
+        # Fetch the data
+        developers_and_commits = self.get_dev_commits()
+        all_issues = self.get_repo_issues()
+        pr_reviews = self.get_repo_prs()
+
+        # Add a timestamp and repository name to the data
+        timestamp = datetime.now().date().isoformat()
+        data = {
+            'timestamp': timestamp,
+            'repo_name': self.repo_name,  # Include repository name
+            'developers_and_commits': developers_and_commits,
+            'all_issues': all_issues,
+            'pr_reviews': pr_reviews
+        }
+
+        return data
+        
     def _parse_repo_url(self, repo_url):
         parsed_url = urlparse(repo_url)
         path_parts = parsed_url.path.strip('/').split('/')
@@ -309,27 +331,6 @@ class GitHubFetcher:
                         break
 
         return pr_reviews_dict
-
-if __name__ == "__main__":
-    key= config.GITHUB_KEY
-    repo_url = "https://github.com/dbeaver/dbeaver"
-    fetcher= GitHubFetcher(key, repo_url)
-    #fetcher.save_data()
-    data = fetcher.fetch_saved_data()
-
-    commits= data['developers_and_commits']
-    issues= data['all_issues']
-    prs= data['pr_reviews']
-
-    sentimental_analysis= SentimentalAnalysis(prs)
-    commit_analysis= CommitAnalysis(commits)
-    issue_analysis= IssueAnalysis(issues)
-
-    print(sentimental_analysis)
-    print(commit_analysis)
-    #TODO add __str__ to issue analysis
-    issue_analysis.display()
-
 
 
 

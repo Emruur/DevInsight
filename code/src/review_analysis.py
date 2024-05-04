@@ -46,10 +46,22 @@ class SentimentalAnalysis:
                 for committer in committers:
                     self.add_developer_score(score, committer)
 
-    def __str__(self) -> str:
-        developers_summary = []
+    def get_developers_as_json(self):
+        developers_json = {}
         for dev_name, developer in self.dev_dict.items():
-            developers_summary.append(f"{dev_name}: Sentiment Score = {developer.get_sentiment_score():.2f}, PRs Contributed = {developer.num_of_contributed_prs}")
+            developers_json[dev_name] = {
+                'Sentiment Score': round(developer.get_sentiment_score(), 2),
+                'PRs Contributed': developer.num_of_contributed_prs
+            }
+        return developers_json
+
+    def __str__(self):
+        developers_json = self.get_developers_as_json()
+        developers_summary = []
+        for dev_name, stats in developers_json.items():
+            developers_summary.append(
+                f"{dev_name}: Sentiment Score = {stats['Sentiment Score']}, PRs Contributed = {stats['PRs Contributed']}"
+            )
         return "\n".join(developers_summary)
 
     def analyze_sentiments(pr_reviews_dict) -> dict[int, float]:
