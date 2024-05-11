@@ -1,0 +1,10 @@
+I want to create a react frontend app styled with bootstrap for this project
+It will have two pages
+    1: index
+        this page will show all exsiting analysis and in progreess analysis 
+        and also should have the functionality to create an analysis
+            - im thinking of displaying these as cards in a grid, the card with + will open a modal to let user enter the repo_url
+            - the rest of the cards show the existing analyses, once clicked it will direct let user select a date of analysis then will direct to anaysis page
+            - if there is an analysis that is in progress it will be display as a disabled card
+    2: analysis
+        for now it can just dump the json

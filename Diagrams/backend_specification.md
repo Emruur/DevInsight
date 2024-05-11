@@ -6,7 +6,7 @@
 - **Response Format**:
   - **Success**:
     - **Status Code**: 200 OK
-    - **Content**: JSON object where each key is a repository name, and the value is either a list of dates (strings) when analyses were completed or the string `"in_progress"` if an analysis is currently ongoing.
+    - **Content**: JSON object where each key is a repository name, and the value is either a list of dates (strings) when analyses were completed or []` if an analysis is currently ongoing.
   - **Example Response**:
     ```json
     {
@@ -16,7 +16,7 @@
       "glide-transformations": ["2024-05-04", "2024-05-05", "2024-05-06"],
       "gson": ["2024-05-04"],
       "hurl": ["2024-05-04"],
-      "jobtalk": "in_progress"
+      "jobtalk": []
     }
     ```
 - **Errors**: None expected unless there's an issue reading the directories.
@@ -107,6 +107,9 @@
     - **Analysis Already in Progress**:
       - **Status Code**: 400 Bad Request
       - **Content**: `{"error": "An analysis is already in progress"}`
+    - **Analysis Already exisit for today**:
+      - **Status Code**: 400 Bad Request
+      - **Content**: `{"error": "An analysis exists for today"}`
 
 ### Error Handling
 - **General Error** (For any unexpected issues):
@@ -145,7 +148,12 @@ sequenceDiagram
     F->>FS: Check if any analysis in progress
     alt analysis in progress
         F->>C: Return error "Analysis already in progress"
-    else no analysis in progress
+
+    F->>FS: Check if an there is an existing analysis made in the same day for the repo
+    alt analysis exists
+        F->>C: Return error "Analysis already exists for today"
+
+    else no analysis in progress and no existing analysis
         F->>FS: Create new in_progress file
         FS->>F: Confirm creation
         F->>C: Return message "Analysis started successfully"

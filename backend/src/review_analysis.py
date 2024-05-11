@@ -1,6 +1,6 @@
-import config
+from . import config
 from dataclasses import dataclass
-from sentiment_analysis import SentimentAnalyzer
+from src.sentiment_analysis import SentimentAnalyzer
 
 github_key = config.GITHUB_KEY
 

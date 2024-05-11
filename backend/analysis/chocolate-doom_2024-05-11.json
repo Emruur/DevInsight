@@ -1,0 +1,1698 @@
+{
+    "date": "2024-05-11",
+    "repo_name": "chocolate-doom",
+    "issues": {
+        "chocolate-import": {
+            "Number of Issues Created": 311,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Rhiyo": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "MrRocket": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "aufau": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "DankRank": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "fragglet": {
+            "Number of Issues Created": 66,
+            "Number of Issues Assigned": 2,
+            "Number of Issues Resolved": 1,
+            "Average Issue Resolution Time": 100.76
+        },
+        "bradharding": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "fielder": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "golergka": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "spicyjack": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "doomgay": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Unknown": {
+            "Number of Issues Created": 20,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Catoptromancy": {
+            "Number of Issues Created": 3,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "proteal": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "AXDOOMER": {
+            "Number of Issues Created": 49,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "fabiangreffrath": {
+            "Number of Issues Created": 49,
+            "Number of Issues Assigned": 4,
+            "Number of Issues Resolved": 4,
+            "Average Issue Resolution Time": 338.18
+        },
+        "Gaerzi": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "romeroyakovlev": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Patrol1985": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "plumsinus": {
+            "Number of Issues Created": 12,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "DrNicholas": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Havokq3": {
+            "Number of Issues Created": 3,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "sneakernets": {
+            "Number of Issues Created": 19,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "twipley": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "chungy": {
+            "Number of Issues Created": 26,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "hughsie": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Stever1009": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "johnsirett": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Gagert": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "haleyjd": {
+            "Number of Issues Created": 19,
+            "Number of Issues Assigned": 6,
+            "Number of Issues Resolved": 5,
+            "Average Issue Resolution Time": 2977.32
+        },
+        "MilkeyWilkey": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "chrismcfee": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Fluttery": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "AlexMax": {
+            "Number of Issues Created": 7,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "fx02": {
+            "Number of Issues Created": 4,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Blzut3": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Zanmato27": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "tpoppins": {
+            "Number of Issues Created": 10,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "PorscheMonty": {
+            "Number of Issues Created": 21,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "temporary-bug-reporter": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "ioan-chera": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "GeoffLedak": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "posophe": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "floppes": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "ryan-sg": {
+            "Number of Issues Created": 3,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Xylemon": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Yukitty": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "njankowski": {
+            "Number of Issues Created": 4,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Puggerugger": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "edward-san": {
+            "Number of Issues Created": 3,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "CapnClever": {
+            "Number of Issues Created": 15,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "jmtd": {
+            "Number of Issues Created": 30,
+            "Number of Issues Assigned": 8,
+            "Number of Issues Resolved": 6,
+            "Average Issue Resolution Time": 6037.57
+        },
+        "tinbutts": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "linguica": {
+            "Number of Issues Created": 12,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "ozzyyzzo4096": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Grek6500": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "NuclearCrow": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Xeriphas1994": {
+            "Number of Issues Created": 4,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Marscaleb": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "g6672D": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "YuGiOhJCJ": {
+            "Number of Issues Created": 5,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "DevastatioN1337": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "GreenLunar": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "MrCrispy21": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "SidhE-FurY": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "dudleydes": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "DartPower": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "SoDOOManiac": {
+            "Number of Issues Created": 40,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "nukeykt": {
+            "Number of Issues Created": 8,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Zalewa": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Danfun64": {
+            "Number of Issues Created": 6,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "andwj": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "terrorcide": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "vanfanel": {
+            "Number of Issues Created": 8,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Steroid-King": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "adarnon": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "nveaa1": {
+            "Number of Issues Created": 3,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "TorutheRedFox": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "bagyoni": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "JNechaevsky": {
+            "Number of Issues Created": 24,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Kroc": {
+            "Number of Issues Created": 3,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "ceyt": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "VGkav": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "shirkdog": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "odhnera": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Aerocatia": {
+            "Number of Issues Created": 3,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Wintermute0110": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "symbios24": {
+            "Number of Issues Created": 4,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "InsanityBringer": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "zombie23470": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "adil25": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Altazimuth": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "devnexen": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "MindfulProtons": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "krozett": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Rahtgaz": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "munday1": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "leohub2016": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Paar86": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "ETTiNGRiNDER": {
+            "Number of Issues Created": 5,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "mfrancis95": {
+            "Number of Issues Created": 19,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "buvk": {
+            "Number of Issues Created": 4,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Mastrius0713": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "turol": {
+            "Number of Issues Created": 12,
+            "Number of Issues Assigned": 1,
+            "Number of Issues Resolved": 1,
+            "Average Issue Resolution Time": 26.94
+        },
+        "RazielZnot": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "fabiensanglard": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "jrhacker": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "jasonsperske": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "blacksparrow123": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Xindage": {
+            "Number of Issues Created": 5,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "adolfintel": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Bashe86": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "bradc6": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "ArchVileF": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "faffa42": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "SpireOnTheMoor": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "ReakutheCrate": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "kenken64": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Pickle": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "CarbonPaste": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "MasterO2": {
+            "Number of Issues Created": 3,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "FabrizioMarana": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "zx64": {
+            "Number of Issues Created": 3,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Adamisred": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Poikilos": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Kizoky": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "e-minguez": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Qumquathedgehog": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "AGuyCalledGerald": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "shoober420": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "earwigsinyourveins": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "wfong714": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "ssardiko": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "crocket": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "vocaab": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "PepsimanRUS": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "QuartzSTQ": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "mikeday0": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "drfrag666": {
+            "Number of Issues Created": 4,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "sinisterseed": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "HollowedEmpire": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "TheElf01": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "moonpiedumplings": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "POWERUPT": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "KevinVitale": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "kitchen-ace": {
+            "Number of Issues Created": 8,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "TelekomItalia": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "n-jay": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "jackrjli": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "MistUnky": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "mmmds": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "ihavetubes": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "unerxai": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "RottingZombie": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "cubebert-github": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "hfc2x": {
+            "Number of Issues Created": 5,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "rohit-n": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Slinkywinky": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Mitschmaster": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "El-Juancho": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "LordKane1701": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "bond-ea": {
+            "Number of Issues Created": 3,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "kringlefant": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Idiot64": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "maxmanium": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "akw0088": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "snoggie1487": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Acts19quiz": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "K0stov": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "simc2": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "RamonUnch": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "OpenRift412": {
+            "Number of Issues Created": 7,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "NY00123": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "wesleywerner": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "kraflab": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Sijonda": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "ChrisIdema": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "atsb": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "medvednikov": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "michaeljhkim": {
+            "Number of Issues Created": 3,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "johnsjob": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Tellywozzle": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "dftf-stu": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "dtsig": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "ForeskinJohn": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "rzhxiii": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "ericcurtin": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Crazy-bat11": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "patricia-gallardo": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "DrEldonTyrell": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Mailaender": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Zerkseas": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "freeve4h": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "ebellumat": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "skynettx": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "f1am3d": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "jordie-sound-system": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "andrikpowell": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "kinker31": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "skyrain128": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "illiquid1": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Machine400": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Doomy65": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "fawtytoo": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "SzJoakim93": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "KynikossDragonn": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "RestlessRodent": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "JoLiKMC": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "SirYodaJedi": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "ManxLoaghtan": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "thekovic": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Rathmox": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Scattershor": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "barnettg": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "actraiser30": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Henrique194": {
+            "Number of Issues Created": 4,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "MFG38": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "ceski-1": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Bob8459": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "jali-peno": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Robbbert": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "QUAKEULUS": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "edwinsaunders": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "wertercatt": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "epac-tom": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Rua": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        }
+    },
+    "commits": {
+        "Henrique194": {
+            "Developer Name": "Henrique194",
+            "GitHub Username": "Henrique194",
+            "Number of Commits": 1,
+            "Additions": 10,
+            "Deletions": 2,
+            "Files Changed": 2
+        },
+        "Turo Lamminen": {
+            "Developer Name": "Turo Lamminen",
+            "GitHub Username": "turol",
+            "Number of Commits": 13,
+            "Additions": 114,
+            "Deletions": 28,
+            "Files Changed": 21
+        },
+        "NY00123": {
+            "Developer Name": "NY00123",
+            "GitHub Username": "NY00123",
+            "Number of Commits": 3,
+            "Additions": 15,
+            "Deletions": 15,
+            "Files Changed": 7
+        },
+        "Julia Nechaevskaya": {
+            "Developer Name": "Julia Nechaevskaya",
+            "GitHub Username": "JNechaevsky",
+            "Number of Commits": 2,
+            "Additions": 11,
+            "Deletions": 4,
+            "Files Changed": 3
+        },
+        "Fabian Greffrath": {
+            "Developer Name": "Fabian Greffrath",
+            "GitHub Username": "fabiangreffrath",
+            "Number of Commits": 14,
+            "Additions": 1277,
+            "Deletions": 517,
+            "Files Changed": 49
+        },
+        "Michael Day": {
+            "Developer Name": "Michael Day",
+            "GitHub Username": "mikeday0",
+            "Number of Commits": 31,
+            "Additions": 2379,
+            "Deletions": 265,
+            "Files Changed": 86
+        },
+        "Roman Fomin": {
+            "Developer Name": "Roman Fomin",
+            "GitHub Username": "rfomin",
+            "Number of Commits": 14,
+            "Additions": 284,
+            "Deletions": 153,
+            "Files Changed": 23
+        },
+        "Simon Howard": {
+            "Developer Name": "Simon Howard",
+            "GitHub Username": "fragglet",
+            "Number of Commits": 5,
+            "Additions": 555,
+            "Deletions": 69,
+            "Files Changed": 27
+        },
+        "Sebastian Falbesoner": {
+            "Developer Name": "Sebastian Falbesoner",
+            "GitHub Username": "theStack",
+            "Number of Commits": 7,
+            "Additions": 0,
+            "Deletions": 154,
+            "Files Changed": 16
+        },
+        "ceski": {
+            "Developer Name": "ceski",
+            "GitHub Username": "ceski-1",
+            "Number of Commits": 7,
+            "Additions": 363,
+            "Deletions": 246,
+            "Files Changed": 16
+        },
+        "Michael Francis": {
+            "Developer Name": "Michael Francis",
+            "GitHub Username": "mfrancis95",
+            "Number of Commits": 1,
+            "Additions": 23,
+            "Deletions": 16,
+            "Files Changed": 2
+        },
+        "tpoppins": {
+            "Developer Name": "tpoppins",
+            "GitHub Username": "tpoppins",
+            "Number of Commits": 1,
+            "Additions": 7,
+            "Deletions": 3,
+            "Files Changed": 1
+        },
+        "Lovey847": {
+            "Developer Name": "Lovey847",
+            "GitHub Username": "Lovey847",
+            "Number of Commits": 1,
+            "Additions": 0,
+            "Deletions": 0,
+            "Files Changed": 1
+        }
+    },
+    "prs": {
+        "paulguy": {
+            "Sentiment Score": 0.67,
+            "PRs Contributed": 1
+        },
+        "svdijk": {
+            "Sentiment Score": 0.49,
+            "PRs Contributed": 1
+        },
+        "fielder": {
+            "Sentiment Score": 0.06,
+            "PRs Contributed": 1
+        },
+        "fx02": {
+            "Sentiment Score": -0.07,
+            "PRs Contributed": 3
+        },
+        "fabiangreffrath": {
+            "Sentiment Score": 0.24,
+            "PRs Contributed": 38
+        },
+        "null": {
+            "Sentiment Score": 0.24,
+            "PRs Contributed": 43
+        },
+        "willybarro": {
+            "Sentiment Score": 0.19,
+            "PRs Contributed": 3
+        },
+        "chungy": {
+            "Sentiment Score": 0.21,
+            "PRs Contributed": 33
+        },
+        "rohit-n": {
+            "Sentiment Score": 0.44,
+            "PRs Contributed": 1
+        },
+        "alexey-lysiuk": {
+            "Sentiment Score": 0.27,
+            "PRs Contributed": 4
+        },
+        "nukeykt": {
+            "Sentiment Score": 0.31,
+            "PRs Contributed": 33
+        },
+        "derek57": {
+            "Sentiment Score": 0.09,
+            "PRs Contributed": 4
+        },
+        "WinterMute": {
+            "Sentiment Score": 0.43,
+            "PRs Contributed": 3
+        },
+        "haleyjd": {
+            "Sentiment Score": -0.34,
+            "PRs Contributed": 1
+        },
+        "fragglet": {
+            "Sentiment Score": 0.23,
+            "PRs Contributed": 10
+        },
+        "sneakernets": {
+            "Sentiment Score": 0.4,
+            "PRs Contributed": 2
+        },
+        "AlexMax": {
+            "Sentiment Score": 0.18,
+            "PRs Contributed": 7
+        },
+        "jkbenaim": {
+            "Sentiment Score": 0.27,
+            "PRs Contributed": 3
+        },
+        "linguica": {
+            "Sentiment Score": 0.28,
+            "PRs Contributed": 8
+        },
+        "Azarien": {
+            "Sentiment Score": 0.33,
+            "PRs Contributed": 4
+        },
+        "Gaerzi": {
+            "Sentiment Score": 0.49,
+            "PRs Contributed": 1
+        },
+        "rrebello": {
+            "Sentiment Score": 0.61,
+            "PRs Contributed": 4
+        },
+        "njankowski": {
+            "Sentiment Score": 0.49,
+            "PRs Contributed": 1
+        },
+        "terrorcide": {
+            "Sentiment Score": 0.49,
+            "PRs Contributed": 1
+        },
+        "krystalgamer": {
+            "Sentiment Score": 0.72,
+            "PRs Contributed": 1
+        },
+        "adarnon": {
+            "Sentiment Score": 0.33,
+            "PRs Contributed": 5
+        },
+        "llgxela": {
+            "Sentiment Score": -0.4,
+            "PRs Contributed": 1
+        },
+        "JNechaevsky": {
+            "Sentiment Score": 0.22,
+            "PRs Contributed": 7
+        },
+        "scfinniss": {
+            "Sentiment Score": 0.15,
+            "PRs Contributed": 3
+        },
+        "jmtd": {
+            "Sentiment Score": 0.18,
+            "PRs Contributed": 14
+        },
+        "CapnClever": {
+            "Sentiment Score": 0.38,
+            "PRs Contributed": 12
+        },
+        "AXDOOMER": {
+            "Sentiment Score": 0.16,
+            "PRs Contributed": 5
+        },
+        "NY00123": {
+            "Sentiment Score": 0.51,
+            "PRs Contributed": 1
+        },
+        "Wintermute0110": {
+            "Sentiment Score": 0.43,
+            "PRs Contributed": 4
+        },
+        "devnexen": {
+            "Sentiment Score": 0.14,
+            "PRs Contributed": 7
+        },
+        "turol": {
+            "Sentiment Score": 0.17,
+            "PRs Contributed": 25
+        },
+        "fjrosario": {
+            "Sentiment Score": 0.49,
+            "PRs Contributed": 1
+        },
+        "ericwa": {
+            "Sentiment Score": 0.47,
+            "PRs Contributed": 1
+        },
+        "BlooD2oo1": {
+            "Sentiment Score": 0.43,
+            "PRs Contributed": 1
+        },
+        "duganchen": {
+            "Sentiment Score": 0.49,
+            "PRs Contributed": 1
+        },
+        "jrhacker": {
+            "Sentiment Score": -0.02,
+            "PRs Contributed": 1
+        },
+        "ioan-chera": {
+            "Sentiment Score": -0.15,
+            "PRs Contributed": 1
+        },
+        "mykola-ambar": {
+            "Sentiment Score": 0.47,
+            "PRs Contributed": 1
+        },
+        "CamGenius": {
+            "Sentiment Score": 0.23,
+            "PRs Contributed": 2
+        },
+        "e-minguez": {
+            "Sentiment Score": 0.56,
+            "PRs Contributed": 1
+        },
+        "hifi": {
+            "Sentiment Score": 0.04,
+            "PRs Contributed": 4
+        },
+        "snwh": {
+            "Sentiment Score": 0.41,
+            "PRs Contributed": 1
+        },
+        "mfrancis95": {
+            "Sentiment Score": 0.33,
+            "PRs Contributed": 10
+        },
+        "Altazimuth": {
+            "Sentiment Score": 0.08,
+            "PRs Contributed": 1
+        },
+        "nikolas": {
+            "Sentiment Score": 0.56,
+            "PRs Contributed": 1
+        },
+        "SoDOOManiac": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 3
+        },
+        "vilhelmgray": {
+            "Sentiment Score": 0.57,
+            "PRs Contributed": 1
+        },
+        "barspinoff": {
+            "Sentiment Score": 0.4,
+            "PRs Contributed": 1
+        },
+        "mikeday0": {
+            "Sentiment Score": 0.26,
+            "PRs Contributed": 1
+        },
+        "TsarFox": {
+            "Sentiment Score": 0.49,
+            "PRs Contributed": 1
+        },
+        "NeuralStunner": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        },
+        "SmileTheory": {
+            "Sentiment Score": 0.25,
+            "PRs Contributed": 2
+        }
+    }
+}

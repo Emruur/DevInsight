@@ -1,6 +1,6 @@
 import requests
 import google.generativeai as genai
-import config
+from . import config
 import requests
 from dataclasses import dataclass
 from datetime import datetime

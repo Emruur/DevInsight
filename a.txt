@@ -1,0 +1,20 @@
+Now i want to create a frontend application for this application.
+I want to use plain js html and bootstrap5 for styling.
+
+I will have 2 pages
+
+Page1: index.html
+this page will display the all avaliable analysis with and alk the dates analyzed for a repo_name
+This page should display each repo as a card and available dates should be displayed in the card
+If a analysis is in progress it should display a spinner
+
+There should be a card with a + icon for creating a new analysis
+When + is pressed it should open up a form modal to recieve the repo url.
+    Errors should be handles when there is an existing analysys in progress
+
+
+Page2: Analysis for a particular repo 
+    this is going to be implemented later. for now you can just dump the json
+
+
+

@@ -59,15 +59,6 @@ class TestFlaskApi(TestCase):
         for filename in os.listdir("in_progress"):
             self.assertEqual(filename, "new_repo.json")
 
-
-    def test_get_all_analysis_2(self):
-        response = self.client.get('/get_all_analysis')
-        self.assertEqual(response.status_code, 200)
-        data = json.loads(response.data)
-        expected_keys = ["AntSimulator", "dbeaver", "glide", "glide-transformations", "gson", "hurl", "new_repo"]
-        for key in expected_keys:
-            self.assertIn(key, data)
-        self.assertIn("in_progress", data["new_repo"])
     
 if __name__ == '__main__':
     suite = unittest.TestSuite()
@@ -76,6 +67,5 @@ if __name__ == '__main__':
     suite.addTest(TestFlaskApi('test_get_analysis_non_existing_file'))
     suite.addTest(TestFlaskApi('test_create_analysis_already_in_progress'))
     suite.addTest(TestFlaskApi('test_create_analysis_allowed'))
-    suite.addTest(TestFlaskApi('test_get_all_analysis_2'))
     runner = unittest.TextTestRunner()
     runner.run(suite)

@@ -1,6 +1,6 @@
-from issue_analysis import IssueAnalysis
-from commit_analysis import CommitAnalysis
-from review_analysis import SentimentalAnalysis
+from src.issue_analysis import IssueAnalysis
+from src.commit_analysis import CommitAnalysis
+from src.review_analysis import SentimentalAnalysis
 import json
 import datetime
 

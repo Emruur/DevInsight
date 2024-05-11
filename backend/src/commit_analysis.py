@@ -1,7 +1,7 @@
 import requests
 from dataclasses import dataclass
 from urllib.parse import urlparse
-import config
+from . import config
 github_token= config.GITHUB_KEY
 
 @dataclass
