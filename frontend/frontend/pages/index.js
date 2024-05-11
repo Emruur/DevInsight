@@ -12,6 +12,7 @@ function IndexPage() {
       .catch(error => console.error('Error fetching data:', error));
   }, []);
 
+
   const handleCreateAnalysis = () => {
     fetch('http://127.0.0.1:5000/create_analysis', {
       method: 'POST',
