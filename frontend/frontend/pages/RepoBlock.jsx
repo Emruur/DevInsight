@@ -1,15 +1,34 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import constants from "../constants";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
+import { useRouter } from "next/router";
 
 const RepoBlock = ({ analysis, idx }) => {
+  const router = useRouter();
+
   const [show, setShow] = useState(false);
+  const [selectedDate, setSelectedDate] = useState(analysis.dates[0]); // Add this line in your component
+
+  useEffect(() => {
+    setSelectedDate(analysis.dates[0]);
+  }, [analysis.dates]);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const handleDateChange = (e) => {
+    setSelectedDate(e.target.value);
+  };
+
+  const handleGetAnalysis = (analysis, selectedDate) => {
+    console.log(analysis.repo_name);
+    console.log(selectedDate);
+
+    router.push(`docs/${analysis.repo_name}/${selectedDate}`);
+  };
 
   const [bgColor, setbgColor] = useState(
     Object.values(constants.colors)[idx % 16]
@@ -33,7 +52,11 @@ const RepoBlock = ({ analysis, idx }) => {
         </Modal.Header>
         <Modal.Body>
           <p>Select a date for this repository:</p>
-          <Form.Select aria-label="Default select example">
+          <Form.Select
+            aria-label="Default select example"
+            onChange={(e) => handleDateChange(e)}
+            value={selectedDate} // Set the value of the Form.Select component to selectedDate
+          >
             {analysis.dates.map((date, idx) => (
               <option key={idx} value={date}>
                 {date}
@@ -45,7 +68,10 @@ const RepoBlock = ({ analysis, idx }) => {
           <Button className="btn-velvet" onClick={handleClose}>
             Close
           </Button>
-          <Button className="btn-teal" onClick={handleClose}>
+          <Button
+            className="btn-teal"
+            onClick={() => handleGetAnalysis(analysis, selectedDate)}
+          >
             Select
           </Button>
         </Modal.Footer>
