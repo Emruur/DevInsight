@@ -8,6 +8,7 @@ from datetime import datetime
 from flask_executor import Executor
 import logging
 from flask_cors import CORS
+from urllib.parse import urlparse
 
 app = Flask(__name__)
 CORS(app)
@@ -17,6 +18,13 @@ analysis_directory = "analysis"  # Update with the path to the analysis director
 in_progress_directory = "in_progress"  # Update with the path to the in_progress directory
 
 print("Debug mode: ", app.debug) ## false
+# Helper function to validate URLs using urllib.parse
+def is_valid_url(url):
+    try:
+        parsed = urlparse(url)
+        return all([parsed.scheme, parsed.netloc])
+    except ValueError:
+        return False
 
 @app.route("/get_all_analysis", methods=['GET'])
 def get_all_analysis():
@@ -78,6 +86,8 @@ def create_analysis():
     repo_url = request.json.get('repo_url')
     if not repo_url:
         return jsonify({"error": "Repository URL is required."}), 400
+    if not is_valid_url(repo_url):
+        return jsonify({"error": "Invalid Repository URL."}), 400
 
     repo_name = repo_url.split('/')[-1]
     in_progress_path = os.path.join(in_progress_directory, f"{repo_name}.json")
