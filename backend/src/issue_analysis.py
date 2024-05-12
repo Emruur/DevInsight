@@ -7,7 +7,6 @@ from datetime import datetime
 
 # Use the API keys from config.py
 github_key = config.GITHUB_KEY
-gemini_key = config.GEMINI_KEY
 
 @dataclass
 class DevIssues:

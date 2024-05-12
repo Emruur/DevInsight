@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*.{js,ts,jsx,tsx,mdx}"]
     }
   }
 }

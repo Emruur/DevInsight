@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useEffect } from "react";
+import "./index.css"
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
