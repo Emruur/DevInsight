@@ -24,7 +24,7 @@ body {
   background-color: #43b7af;
   height: 10vh;
   width: 100%;
-  padding-top: 10px;
+  padding-top: 2vh;
 }
 
 .header-text {
@@ -86,4 +86,10 @@ body {
   background-color: #d14d7200;
   color: #254f73;
   border-color: #254f73;
+}
+
+.go-back-btn {
+  display: inline-block;
+  text-align: center;
+  width: 5vw;
 }

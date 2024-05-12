@@ -7,6 +7,7 @@ import DeveloperCard from "../../DeveloperCard";
 import Button from "react-bootstrap/Button";
 import IssueCard from "../../IssueCard";
 import PrCard from "../../PrCard";
+import { IoMdArrowRoundBack } from "react-icons/io";
 
 const Page = () => {
   const [repoData, setRepoData] = useState({});
@@ -82,6 +83,14 @@ const Page = () => {
           <div className="col-10 d-flex justify-content-center">
             <div className="col-12">
               <div className="row">
+                <Button
+                  className="btn-teal go-back-btn"
+                  onClick={() => handleBack()}
+                >
+                  <IoMdArrowRoundBack />
+                  Back
+                </Button>
+
                 {developerDataList.map((developerData, idx) => (
                   <DeveloperCard
                     key={idx}
@@ -89,7 +98,7 @@ const Page = () => {
                     devData={developerData}
                   />
                 ))}
-                
+
                 {issueDataList.map((issueData, idx) => (
                   <IssueCard
                     key={idx}
@@ -99,16 +108,8 @@ const Page = () => {
                 ))}
 
                 {prDataList.map((prData, idx) => (
-                  <PrCard
-                    key={idx}
-                    prName={prNames[idx]}
-                    prData={prData}
-                  />
+                  <PrCard key={idx} prName={prNames[idx]} prData={prData} />
                 ))}
-
-                <Button className="btn-teal" onClick={() => handleBack()}>
-                  Back
-                </Button>
               </div>
             </div>
           </div>
