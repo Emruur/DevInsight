@@ -11,6 +11,7 @@ const RepoBlock = ({ analysis, idx }) => {
 
   const [show, setShow] = useState(false);
   const [selectedDate, setSelectedDate] = useState(analysis.dates[0]); // Add this line in your component
+  //TODO more things will be added if the date is in progress
 
   useEffect(() => {
     setSelectedDate(analysis.dates[0]);
@@ -24,9 +25,6 @@ const RepoBlock = ({ analysis, idx }) => {
   };
 
   const handleGetAnalysis = (analysis, selectedDate) => {
-    console.log(analysis.repo_name);
-    console.log(selectedDate);
-
     router.push(`docs/${analysis.repo_name}/${selectedDate}`);
   };
 

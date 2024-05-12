@@ -32,7 +32,7 @@ function IndexPage() {
   return (
     <>
       <Header />
-      <div className="container py-5">
+      <div className="container pt-5">
         <div className="row d-flex justify-content-center">
           <div className="col-10 d-flex justify-content-center">
             <div className="col-12">
