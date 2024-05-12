@@ -93,3 +93,9 @@ body {
   text-align: center;
   width: 5vw;
 }
+
+.filter-btn {
+  display: inline-block;
+  text-align: center;
+  width: 9vw;
+}
