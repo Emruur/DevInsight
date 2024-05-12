@@ -25,6 +25,7 @@ const Page = () => {
           if (data.commits) {
             const names = [];
             const dataList = [];
+            //TODO only the commits are being fetched, other types of data (i.e. issue created) will be fetched later
             for (let developerName in data.commits) {
               names.push(developerName);
               dataList.push(Object.entries(data.commits[developerName]));
