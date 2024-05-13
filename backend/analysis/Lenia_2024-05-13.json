@@ -1,0 +1,184 @@
+{
+    "date": "2024-05-13",
+    "repo_name": "Lenia",
+    "issues": {
+        "Chakazul": {
+            "Number of Issues Created": 3,
+            "Number of Issues Assigned": 2,
+            "Number of Issues Resolved": 2,
+            "Average Issue Resolution Time": 8890.14
+        },
+        "worlwide": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Omega97": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "simsim314": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Eirikur": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "danwills": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "TasseDeCafe": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "miloxeon": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "elfring": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "thedocruby": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Foxxey": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Papagemabodi": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "luccahuguet": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        }
+    },
+    "commits": {
+        "Bert Chan": {
+            "Developer Name": "Bert Chan",
+            "GitHub Username": "Chakazul",
+            "Number of Commits": 93,
+            "Additions": 27495,
+            "Deletions": 3265,
+            "Files Changed": 144
+        },
+        "Ccode-lang": {
+            "Developer Name": "Ccode-lang",
+            "GitHub Username": "Ccode-lang",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 0,
+            "Files Changed": 1
+        },
+        "Christian Clauss": {
+            "Developer Name": "Christian Clauss",
+            "GitHub Username": "cclauss",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 5,
+            "Files Changed": 4
+        },
+        "Alexander Pavlenko": {
+            "Developer Name": "Alexander Pavlenko",
+            "GitHub Username": "AlexanderPavlenko",
+            "Number of Commits": 1,
+            "Additions": 6,
+            "Deletions": 6,
+            "Files Changed": 1
+        },
+        "dependabot[bot]": {
+            "Developer Name": "dependabot[bot]",
+            "GitHub Username": "dependabot[bot]",
+            "Number of Commits": 1,
+            "Additions": 1,
+            "Deletions": 1,
+            "Files Changed": 1
+        },
+        "bjorn3": {
+            "Developer Name": "bjorn3",
+            "GitHub Username": "bjorn3",
+            "Number of Commits": 1,
+            "Additions": 1,
+            "Deletions": 1,
+            "Files Changed": 1
+        },
+        "Arkady-M": {
+            "Developer Name": "Arkady-M",
+            "GitHub Username": "Arkady-A",
+            "Number of Commits": 1,
+            "Additions": 41,
+            "Deletions": 0,
+            "Files Changed": 2
+        },
+        "cclauss": {
+            "Developer Name": "cclauss",
+            "GitHub Username": null,
+            "Number of Commits": 1,
+            "Additions": 2,
+            "Deletions": 1,
+            "Files Changed": 1
+        }
+    },
+    "prs": {
+        "null": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 2
+        },
+        "Arkady-A": {
+            "Sentiment Score": 0.44,
+            "PRs Contributed": 1
+        },
+        "bjorn3": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        },
+        "dependabot[bot]": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 5
+        },
+        "AlexanderPavlenko": {
+            "Sentiment Score": 0.35,
+            "PRs Contributed": 1
+        },
+        "cclauss": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        },
+        "Ccode-lang": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        },
+        "ShahriarNasseri": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        }
+    }
+}

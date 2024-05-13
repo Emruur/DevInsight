@@ -70,7 +70,7 @@ def perform_analysis(repo_name, repo_url):
     app.logger.debug(f"Analysis started for {repo_name}")
     key = config.GITHUB_KEY
     fetcher = GitHubFetcher(key, repo_url)
-    data = fetcher.fetch_data()
+    data = fetcher.fetch_data(app, repo_name)
     app.logger.debug(f"Data fetched for {repo_name}")
     
     analysis = Analysis(data['developers_and_commits'], data['all_issues'], data['pr_reviews'], data['timestamp'], repo_name)
@@ -101,7 +101,9 @@ def create_analysis():
     with open(in_progress_path, 'w') as file:
         json.dump({"status": "in progress", "repo_url": repo_url}, file)
 
-    executor.submit(perform_analysis, repo_name, repo_url)
+    #executor.submit(perform_analysis, repo_name, repo_url)
+        
+    perform_analysis(repo_name, repo_url)
     return jsonify({"message": "Analysis started successfully for " + repo_name}), 202
 
 

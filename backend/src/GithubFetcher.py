@@ -87,21 +87,26 @@ class GitHubFetcher:
             print(f"No saved data found for the repository '{self.repo_name}'.")
             return None
         
-    def fetch_data(self):
+    def fetch_data(self, app, repo_name):
         """
         Fetches all data related to developers, issues, and pull requests for the specified repository,
         adds a timestamp and repository name, and returns it.
         """
         # Fetch the data
+        app.logger.debug(f"Data fetcimg for {repo_name}")
         developers_and_commits = self.get_dev_commits()
+        app.logger.debug(f"Commits fetched for {repo_name}")
         all_issues = self.get_repo_issues()
-        pr_reviews = self.get_repo_prs()
+        app.logger.debug(f"Issues fetched for {repo_name}")
+        pr_reviews = self.get_repo_prs(app,repo_name)
+        app.logger.debug(f"PR's fetched for {repo_name}")
+
 
         # Add a timestamp and repository name to the data
         timestamp = datetime.now().date().isoformat()
         data = {
             'timestamp': timestamp,
-            'repo_name': self.repo_name,  # Include repository name
+            'repo_name': self.repo_name,
             'developers_and_commits': developers_and_commits,
             'all_issues': all_issues,
             'pr_reviews': pr_reviews
@@ -150,7 +155,7 @@ class GitHubFetcher:
         if response.status_code == 200:
             return response.json()
         else:
-            raise Exception(f"Failed to fetch developers and commits. Status code: {response.status_code}")
+            raise Exception(f"Failed to fetch developers and commits. Status code: {response.status_code} - {response.message}")
 
     def get_repo_issues(self, max_issues=None):
         all_issues = []
@@ -206,11 +211,11 @@ class GitHubFetcher:
                 if issues_cursor is None or (max_issues is not None and len(all_issues) >= max_issues):
                     break
             else:
-                raise Exception(f"Query failed to run with a {response.status_code}")
+                raise Exception(f"Issue query failed to run with a {response.status_code} - {response.message}")
 
         return all_issues[:max_issues]
 
-    def get_repo_prs(self):
+    def get_repo_prs(self, app, repo_name):
         url = "https://api.github.com/graphql"
         headers = {"Authorization": f"Bearer {self.token}", "Content-Type": "application/json"}
 
@@ -277,21 +282,29 @@ class GitHubFetcher:
             "numPullRequests": 100,  # Initial batch size, capped at 100
             "cursor": None
         }
-
+        app.logger.debug(f"Fetching prs for {repo_name}")
+        cnt= 1
         while True:
+            app.logger.debug(f" PR Fetching page {cnt} for {repo_name} with {variables}")
             response = requests.post(url, json={'query': query_template, 'variables': variables}, headers=headers)
+            app.logger.debug(f" returned {cnt}")
 
             if response.status_code != 200:
-                print(f"Query failed to run with a {response.status_code}")
+                app.logger.debug(f"PR query failed to run with a {response.status_code}")
+                app.logger.debug(f"PR query failed message {response.text}")
                 break
             else:
+                
                 data = response.json()
                 if 'errors' in data:
-                    print("GraphQL query returned errors:")
+                    app.logger.debug("GraphQL query returned errors:")
                     for error in data['errors']:
                         print(error['message'])
+                        app.logger.debug(f"PR error query {error['message']}")
                     break
                 else:
+                    app.logger.debug(f" PR fetch finished {cnt} for {repo_name}")
+                    cnt += 1
                     pull_requests = data['data']['repository']['pullRequests']['edges']
                     for pr in pull_requests:
                         node = pr['node']
@@ -328,6 +341,7 @@ class GitHubFetcher:
                     if has_next_page:
                         variables['cursor'] = page_info['endCursor']
                     else:
+                        app.logger.debug(f" no more PR pages for {repo_name} ")
                         break
 
         return pr_reviews_dict
