@@ -291,7 +291,9 @@ class GitHubFetcher:
 
             if response.status_code != 200:
                 app.logger.debug(f"PR query failed to run with a {response.status_code}")
-                app.logger.debug(f"PR query failed message {response.text}")
+                file_name= f'repo_errors/{repo_name}.html'
+                with open(file_name, 'w') as file:
+                    file.write(response.text)
                 break
             else:
                 
