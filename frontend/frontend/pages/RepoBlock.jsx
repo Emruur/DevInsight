@@ -26,8 +26,12 @@ const RepoBlock = ({ analysis, idx, loading }) => {
   }, [analysis]);
 
   useEffect(() => {
-    setLoadingLocal(loading);
-  }, [loading]);
+    if (analysis?.dates?.some(date => date === "in progress")) {
+      setLoadingLocal(true);
+    } else {
+      setLoadingLocal(false);
+    }
+  }, [analysis]);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);

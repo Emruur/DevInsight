@@ -37,6 +37,7 @@ function IndexPage() {
         console.log("Analysis started:", data);
         // Add the new analysis with loading set to true
         setAnalyses(prevAnalyses => [...prevAnalyses, { ...data, loading: true }]);
+        location.reload();
       })
       .catch((error) => {
         setErrorMessage(error.message);
