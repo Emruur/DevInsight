@@ -15,12 +15,12 @@ To start using DevInsight, you need to first clone the repository to your local 
 git clone https://github.com/Emruur/CS453Project
 ```
 ### 3. Setting Up and Running the Backend (Flask)
-####1. Environment Setup:
-**Ensure Python and Flask are installed. You can install Flask using pip if it's not already installed:
+### 1. Environment Setup:
+Ensure Python and Flask are installed. You can install Flask using pip if it's not already installed:
 ```bash
 pip install Flask
 ```
-**Set up config.py file in your the project under the “backend/src” directory with the necessary configuration for the GitHub API key, follow these steps:
+Set up config.py file in your the project under the “backend/src” directory with the necessary configuration for the GitHub API key, follow these steps:
 1. Navigate to the backend/src directory of the project:
 ```bash
 cd CS453Project/backend/src
@@ -32,4 +32,4 @@ cd CS453Project/backend/src
 GITHUB_KEY = "your_api_key"
 ```
 Ensure you keep this key secure and do not share it publicly. After entering the necessary code, save the file and close the text editor.
-####2. Running the Backend:
+### 2. Running the Backend:
