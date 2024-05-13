@@ -362,7 +362,7 @@ const Page = () => {
                         aria-label="Default select example"
                       >
                         <option disabled value="0">
-                          Filter by:
+                          Sort by:
                         </option>
                         <option value="1">Developer Name</option>
                         <option value="2">GitHub Username</option>
@@ -406,7 +406,7 @@ const Page = () => {
                         aria-label="Default select example"
                       >
                         <option disabled value="0">
-                          Filter by:
+                          Sort by:
                         </option>
                         <option value="1">PRs Contributed</option>
                         <option value="2">Sentiment Score</option>
@@ -446,7 +446,7 @@ const Page = () => {
                         aria-label="Default select example"
                       >
                         <option disabled value="0">
-                          Filter by:
+                          Sort by:
                         </option>
                         <option value="1">Number of Issues Created</option>
                         <option value="2">Number of Issues Assigned</option>
