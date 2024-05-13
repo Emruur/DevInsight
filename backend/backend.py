@@ -101,9 +101,9 @@ def create_analysis():
     with open(in_progress_path, 'w') as file:
         json.dump({"status": "in progress", "repo_url": repo_url}, file)
 
-    #executor.submit(perform_analysis, repo_name, repo_url)
+    executor.submit(perform_analysis, repo_name, repo_url)
         
-    perform_analysis(repo_name, repo_url)
+    #perform_analysis(repo_name, repo_url)
     return jsonify({"message": "Analysis started successfully for " + repo_name}), 202
 
 
