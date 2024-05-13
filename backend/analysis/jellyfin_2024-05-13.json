@@ -20966,19 +20966,19 @@
     "prs": {
         "nvllsvm": {
             "Sentiment Score": 0.1,
-            "PRs Contributed": 98
+            "PRs Contributed": 101
         },
         "joshuaboniface": {
-            "Sentiment Score": 0.12,
-            "PRs Contributed": 156
+            "Sentiment Score": 0.11,
+            "PRs Contributed": 158
         },
         "null": {
-            "Sentiment Score": 0.16,
-            "PRs Contributed": 35
+            "Sentiment Score": 0.14,
+            "PRs Contributed": 40
         },
         "anthonylavado": {
             "Sentiment Score": 0.13,
-            "PRs Contributed": 46
+            "PRs Contributed": 49
         },
         "LeoVerto": {
             "Sentiment Score": 0.04,
@@ -20986,7 +20986,7 @@
         },
         "Bond-009": {
             "Sentiment Score": 0.08,
-            "PRs Contributed": 316
+            "PRs Contributed": 357
         },
         "LogicalPhallacy": {
             "Sentiment Score": 0.13,
@@ -20994,15 +20994,15 @@
         },
         "BnMcG": {
             "Sentiment Score": 0.07,
-            "PRs Contributed": 12
+            "PRs Contributed": 14
         },
         "drakus72": {
             "Sentiment Score": 0.04,
             "PRs Contributed": 4
         },
         "dkanada": {
-            "Sentiment Score": 0.14,
-            "PRs Contributed": 30
+            "Sentiment Score": 0.12,
+            "PRs Contributed": 38
         },
         "0xflotus": {
             "Sentiment Score": 0.0,
@@ -21010,7 +21010,7 @@
         },
         "JustAMan": {
             "Sentiment Score": 0.1,
-            "PRs Contributed": 47
+            "PRs Contributed": 48
         },
         "agsimmons": {
             "Sentiment Score": 0.16,
@@ -21053,8 +21053,8 @@
             "PRs Contributed": 13
         },
         "EraYaN": {
-            "Sentiment Score": 0.14,
-            "PRs Contributed": 69
+            "Sentiment Score": 0.13,
+            "PRs Contributed": 74
         },
         "Wuerfelbecher": {
             "Sentiment Score": 0.22,
@@ -21062,7 +21062,7 @@
         },
         "cvium": {
             "Sentiment Score": 0.12,
-            "PRs Contributed": 98
+            "PRs Contributed": 99
         },
         "sparky8251": {
             "Sentiment Score": 0.18,
@@ -21112,7 +21112,7 @@
             "Sentiment Score": 0.11,
             "PRs Contributed": 2
         },
-        "kowalski7cc": {
+        "HavermansStef": {
             "Sentiment Score": 0.04,
             "PRs Contributed": 4
         },
@@ -21120,17 +21120,17 @@
             "Sentiment Score": 0.04,
             "PRs Contributed": 4
         },
-        "Hadr1en": {
-            "Sentiment Score": 0.04,
-            "PRs Contributed": 4
-        },
-        "HavermansStef": {
+        "kowalski7cc": {
             "Sentiment Score": 0.04,
             "PRs Contributed": 4
         },
         "WWWesten": {
             "Sentiment Score": 0.15,
             "PRs Contributed": 9
+        },
+        "Hadr1en": {
+            "Sentiment Score": 0.04,
+            "PRs Contributed": 4
         },
         "ZsiGiT": {
             "Sentiment Score": 0.08,
@@ -21180,11 +21180,7 @@
             "Sentiment Score": 0.13,
             "PRs Contributed": 6
         },
-        "v1tin": {
-            "Sentiment Score": 0.4,
-            "PRs Contributed": 1
-        },
-        "Rassilion": {
+        "LilligantMatsuri": {
             "Sentiment Score": 0.4,
             "PRs Contributed": 1
         },
@@ -21196,11 +21192,7 @@
             "Sentiment Score": 0.4,
             "PRs Contributed": 1
         },
-        "LilligantMatsuri": {
-            "Sentiment Score": 0.4,
-            "PRs Contributed": 1
-        },
-        "jstebenne": {
+        "v1tin": {
             "Sentiment Score": 0.4,
             "PRs Contributed": 1
         },
@@ -21209,6 +21201,14 @@
             "PRs Contributed": 1
         },
         "bobberb": {
+            "Sentiment Score": 0.4,
+            "PRs Contributed": 1
+        },
+        "jstebenne": {
+            "Sentiment Score": 0.4,
+            "PRs Contributed": 1
+        },
+        "Rassilion": {
             "Sentiment Score": 0.4,
             "PRs Contributed": 1
         },
@@ -21248,15 +21248,15 @@
             "Sentiment Score": 0.08,
             "PRs Contributed": 8
         },
-        "tinganhsu": {
-            "Sentiment Score": 0.28,
-            "PRs Contributed": 2
-        },
         "Heldenkrieger01": {
             "Sentiment Score": 0.28,
             "PRs Contributed": 2
         },
         "flibor": {
+            "Sentiment Score": 0.28,
+            "PRs Contributed": 2
+        },
+        "tinganhsu": {
             "Sentiment Score": 0.28,
             "PRs Contributed": 2
         },
@@ -21297,8 +21297,8 @@
             "PRs Contributed": 2
         },
         "ferferga": {
-            "Sentiment Score": 0.13,
-            "PRs Contributed": 3
+            "Sentiment Score": 0.24,
+            "PRs Contributed": 4
         },
         "TrisMcC": {
             "Sentiment Score": 0.0,
@@ -21361,8 +21361,8 @@
             "PRs Contributed": 1
         },
         "Unhelpful": {
-            "Sentiment Score": 0.3,
-            "PRs Contributed": 1
+            "Sentiment Score": 0.15,
+            "PRs Contributed": 2
         },
         "stanionascu": {
             "Sentiment Score": 0.27,
@@ -21381,8 +21381,8 @@
             "PRs Contributed": 1
         },
         "stevehayles": {
-            "Sentiment Score": 0.12,
-            "PRs Contributed": 3
+            "Sentiment Score": 0.14,
+            "PRs Contributed": 4
         },
         "escabe": {
             "Sentiment Score": 0.0,
@@ -21397,8 +21397,8 @@
             "PRs Contributed": 1
         },
         "mark-monteiro": {
-            "Sentiment Score": 0.44,
-            "PRs Contributed": 1
+            "Sentiment Score": 0.34,
+            "PRs Contributed": 4
         },
         "neilsb": {
             "Sentiment Score": 0.41,
@@ -21406,6 +21406,74 @@
         },
         "cromefire": {
             "Sentiment Score": 0.02,
+            "PRs Contributed": 1
+        },
+        "Artiume": {
+            "Sentiment Score": 0.06,
+            "PRs Contributed": 8
+        },
+        "daullmer": {
+            "Sentiment Score": 0.06,
+            "PRs Contributed": 1
+        },
+        "WiiPlayer2": {
+            "Sentiment Score": 0.03,
+            "PRs Contributed": 1
+        },
+        "KuraiAndras": {
+            "Sentiment Score": 0.27,
+            "PRs Contributed": 1
+        },
+        "gnattu": {
+            "Sentiment Score": 0.41,
+            "PRs Contributed": 1
+        },
+        "sachk": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        },
+        "nyanmisaka": {
+            "Sentiment Score": 0.29,
+            "PRs Contributed": 5
+        },
+        "geilername": {
+            "Sentiment Score": -0.11,
+            "PRs Contributed": 1
+        },
+        "mregni": {
+            "Sentiment Score": 0.19,
+            "PRs Contributed": 1
+        },
+        "shemanaev": {
+            "Sentiment Score": 0.45,
+            "PRs Contributed": 1
+        },
+        "pR0Ps": {
+            "Sentiment Score": 0.28,
+            "PRs Contributed": 2
+        },
+        "PrplHaz4": {
+            "Sentiment Score": 0.11,
+            "PRs Contributed": 1
+        },
+        "ThreeFive-O": {
+            "Sentiment Score": 0.33,
+            "PRs Contributed": 2
+        },
+        "Matt07211": {
+            "Sentiment Score": 0.02,
+            "PRs Contributed": 1
+        },
+        "mcarlton00": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        },
+        "DMouse10462": {
+            "Sentiment Score": 0.07,
+            "PRs Contributed": 1
+        },
+        "viaregio": {
+            "Sentiment Score": 0.11,
             "PRs Contributed": 1
         }
     }
