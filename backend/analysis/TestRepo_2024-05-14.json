@@ -1,0 +1,36 @@
+{
+    "date": "2024-05-14",
+    "repo_name": "TestRepo",
+    "issues": {
+        "Emruur": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 1,
+            "Number of Issues Resolved": 1,
+            "Average Issue Resolution Time": 0.02
+        }
+    },
+    "commits": {
+        "Emre U\u011fur": {
+            "Developer Name": "Emre U\u011fur",
+            "GitHub Username": "Emruur",
+            "Number of Commits": 1,
+            "Additions": 3,
+            "Deletions": 0,
+            "Files Changed": 1
+        },
+        "Emruur": {
+            "Developer Name": "Emruur",
+            "GitHub Username": "Emruur",
+            "Number of Commits": 4,
+            "Additions": 11,
+            "Deletions": 3,
+            "Files Changed": 4
+        }
+    },
+    "prs": {
+        "Emruur": {
+            "Sentiment Score": -0.53,
+            "PRs Contributed": 1
+        }
+    }
+}

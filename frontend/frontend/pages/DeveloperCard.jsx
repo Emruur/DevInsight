@@ -41,7 +41,6 @@ const DeveloperCard = ({ devName, devData }) => {
             <h6 className="card-subtitle mb-2 text-muted">{githubUsername}</h6>
             <p className="card-text">{additions}</p>
             <p className="card-text">{deletions}</p>
-            <p className="card-text">{filesChanged}</p>
             <p className="card-text">{numberOfCommits}</p>
           </div>
         </div>

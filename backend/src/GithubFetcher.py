@@ -94,9 +94,9 @@ class GitHubFetcher:
         """
         # Fetch the data
         app.logger.debug(f"Data fetcimg for {repo_name}")
-        developers_and_commits = self.get_dev_commits()
+        developers_and_commits = self.get_dev_commits(app)
         app.logger.debug(f"Commits fetched for {repo_name}")
-        all_issues = self.get_repo_issues()
+        all_issues = self.get_repo_issues(app)
         app.logger.debug(f"Issues fetched for {repo_name}")
         pr_reviews = self.get_repo_prs(app,repo_name)
         app.logger.debug(f"PR's fetched for {repo_name}")
@@ -121,43 +121,61 @@ class GitHubFetcher:
             raise ValueError("Invalid repository URL")
         return path_parts
 
-    def get_dev_commits(self):
+    import requests
 
-        query = f"""
-        query {{
-          repository(owner: "{self.owner}", name: "{self.repo_name}") {{
-            defaultBranchRef {{
-              target {{
-                ... on Commit {{
-                  history {{
-                    edges {{
-                      node {{
-                        author {{
-                          name
-                          user {{
-                            login
-                          }}
+    def get_dev_commits(self, app):
+        all_commits = []  # List to store all commits across pages
+        end_cursor = None  # Start with no cursor
+        has_next_page = True  # Condition to keep the loop running
+        cntr= 1
+        while has_next_page:
+            query = f"""
+            query {{
+            repository(owner: "{self.owner}", name: "{self.repo_name}") {{
+                defaultBranchRef {{
+                target {{
+                    ... on Commit {{
+                    history(first: 100, after: {json.dumps(end_cursor)}) {{
+                        pageInfo {{
+                        hasNextPage
+                        endCursor
                         }}
-                        additions
-                        deletions
-                        changedFiles
-                      }}
+                        edges {{
+                        node {{
+                            author {{
+                            name
+                            user {{
+                                login
+                            }}
+                            }}
+                            additions
+                            deletions
+                            changedFiles
+                        }}
+                        }}
                     }}
-                  }}
+                    }}
                 }}
-              }}
+                }}
             }}
-          }}
-        }}
-        """
+            }}
+            """
+            response = requests.post(self.base_url, json={'query': query}, headers=self.headers)
+            if response.status_code == 200:
+                app.logger.debug(f"Commit fetch page {cntr}")
+                cntr += 1
+                data = response.json()
+                commits = data['data']['repository']['defaultBranchRef']['target']['history']['edges']
+                all_commits.extend(commits)
+                page_info = data['data']['repository']['defaultBranchRef']['target']['history']['pageInfo']
+                has_next_page = page_info['hasNextPage']
+                end_cursor = page_info['endCursor']
+            else:
+                raise Exception(f"Failed to fetch developers and commits. Status code: {response.status_code} - {response.reason}")
 
-        response = requests.post(self.base_url, json={'query': query}, headers=self.headers)
-        if response.status_code == 200:
-            return response.json()
-        else:
-            raise Exception(f"Failed to fetch developers and commits. Status code: {response.status_code} - {response.message}")
+        return all_commits
 
-    def get_repo_issues(self, max_issues=None):
+    def get_repo_issues(self, app,max_issues=None):
         all_issues = []
         issues_cursor = None
         query_template = """
@@ -194,12 +212,15 @@ class GitHubFetcher:
         }
         """
 
+        cntr=1
         while True:
             issues_fetch_count = 100 if max_issues is None else min(100, max_issues - len(all_issues))
             variables = {'owner': self.owner, 'repoName': self.repo_name, 'count': issues_fetch_count, 'issuesCursor': issues_cursor}
-
+            app.logger.debug(f"Issue page {cntr}")
+            cntr += 1
             response = requests.post(self.base_url, json={'query': query_template, 'variables': variables}, headers=self.headers)
             if response.status_code == 200:
+
                 data = response.json()
                 issues = data['data']['repository']['issues']['edges']
                 all_issues.extend(issues[:issues_fetch_count])
@@ -211,7 +232,7 @@ class GitHubFetcher:
                 if issues_cursor is None or (max_issues is not None and len(all_issues) >= max_issues):
                     break
             else:
-                raise Exception(f"Issue query failed to run with a {response.status_code} - {response.message}")
+                raise Exception(f"Issue query failed to run with a {response.status_code} - {response.text}")
 
         return all_issues[:max_issues]
 
@@ -285,7 +306,7 @@ class GitHubFetcher:
         app.logger.debug(f"Fetching prs for {repo_name}")
         cnt= 1
         while True:
-            app.logger.debug(f" PR Fetching page {cnt} for {repo_name} with {variables}")
+            app.logger.debug(f" PR Fetching page {cnt} for {repo_name}")
             response = requests.post(url, json={'query': query_template, 'variables': variables}, headers=headers)
             app.logger.debug(f" returned {cnt}")
 

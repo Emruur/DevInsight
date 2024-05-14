@@ -24,7 +24,7 @@ class CommitAnalysis:
 
     def initialize_devs(self, data):
         """Initializes developers from fetched data."""
-        for edge in data['data']['repository']['defaultBranchRef']['target']['history']['edges']:
+        for edge in data:
             author_name = edge['node']['author']['name']
             author_username = edge['node']['author']['user']['login'] if edge['node']['author']['user'] else None
             additions = edge['node']['additions']

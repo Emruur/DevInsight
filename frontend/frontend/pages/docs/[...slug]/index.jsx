@@ -113,21 +113,6 @@ const Page = () => {
         break;
       case 5:
         sortedList = [...developerDataList].sort((a, b) => {
-          const aValue = a[3][1];
-          const bValue = b[3][1];
-
-          if (aValue > bValue) {
-            return -1;
-          } else if (aValue < bValue) {
-            return 1;
-          } else {
-            return 0;
-          }
-        });
-        setDeveloperDataList(sortedList);
-        break;
-      case 6:
-        sortedList = [...developerDataList].sort((a, b) => {
           const aValue = a[5][1];
           const bValue = b[5][1];
 
@@ -368,8 +353,7 @@ const Page = () => {
                         <option value="2">GitHub Username</option>
                         <option value="3">Additions</option>
                         <option value="4">Deletions</option>
-                        <option value="5">Files Changed</option>
-                        <option value="6">Number of Commits</option>
+                        <option value="5">Number of Commits</option>
                       </Form.Select>
                     </div>
                     {!developerDataList || developerDataList.length === 0 ? (

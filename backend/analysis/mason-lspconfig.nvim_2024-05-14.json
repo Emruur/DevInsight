@@ -1,0 +1,1728 @@
+{
+    "date": "2024-05-14",
+    "repo_name": "mason-lspconfig.nvim",
+    "issues": {
+        "dagadbm": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "tannerellen": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "kassio": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "prdanelli": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "marcosnils": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "taDachs": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "kylo252": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "abalmos": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "3699394": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "xsteadfastx": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "mslalith": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Anakael": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "whollingsworth": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "ray-x": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "NEX-S": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "marroen": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "dave-kennedy": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "leviathanion": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "the-lazy-learner": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "ignamartinoli": {
+            "Number of Issues Created": 3,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "baco": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "CharlesARoy": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "rajcspsg": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "ebiscaia": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "bezlant": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "nonogakhi": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "josushu0": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "strayer": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "TisnKu": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "felix-clark": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "mesa123123": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "xyven1": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "kylechui": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "LiberaTeMetuMortis": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Ae-Mc": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "jzone1366": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "poperigby": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "hongyuanjia": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "jam1015": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "SingularisArt": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "hahuang65": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "sdsaati": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "TheRealLorenz": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Davincible": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "simaxme": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "cprn": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "qujihan": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "RaafatTurki": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "MonadeInFlask": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "notjl": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "calebdw": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "collegeimprovements": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "vkuppoor": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "peskovdev": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "willswats": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "ckt114": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "ardubev16": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "nyngwang": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "ismael-lajaaiti": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "jay-babu": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "sadiksaifi": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "luiz00martins": {
+            "Number of Issues Created": 2,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "EliSauder": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "SinnerSS": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "james2432": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "huboles": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "liviudm": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "felixnorden": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "zstreet87": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Unknown": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "UtkarshVerma": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Izanagi-96": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "mbainter": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "boojum": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "btgould": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "gongfarmer": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "juangpc": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "kikito": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "iawaknahc": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "imxyy1soope1": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "eli-front": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "oryband": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "sharefantasy": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "matmatias": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "henryy-el": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "artischocki": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "andresestrella": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "adrian5": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "sadtab": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "mangelozzi": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "GeorgeZack": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "etherbiswas": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "grab-a-byte": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Blackjacx": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "RomaLzhih": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Arethusag": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "lemonnuggets": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "genebean": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Numkil": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "boh001": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Redoxahmii": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "mrcjkb": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "schnierstein": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Endermanbugzjfc": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "fabienengels": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "LJNielsenDk": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Wordluc": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "sho-87": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "aaronkjones": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "dbuls": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "humaidq": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "Sarctiann": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        },
+        "mr-mustash": {
+            "Number of Issues Created": 1,
+            "Number of Issues Assigned": 0,
+            "Number of Issues Resolved": 0,
+            "Average Issue Resolution Time": 0
+        }
+    },
+    "commits": {
+        "williambotman[bot]": {
+            "Developer Name": "williambotman[bot]",
+            "GitHub Username": "williambotman",
+            "Number of Commits": 65,
+            "Additions": 462,
+            "Deletions": 160,
+            "Files Changed": 131
+        },
+        "Martin Sigloch": {
+            "Developer Name": "Martin Sigloch",
+            "GitHub Username": "f0i",
+            "Number of Commits": 1,
+            "Additions": 4,
+            "Deletions": 0,
+            "Files Changed": 4
+        },
+        "Carlos Flor\u00eancio": {
+            "Developer Name": "Carlos Flor\u00eancio",
+            "GitHub Username": "carlosflorencio",
+            "Number of Commits": 1,
+            "Additions": 7,
+            "Deletions": 1,
+            "Files Changed": 5
+        },
+        "Matheus Gabriel": {
+            "Developer Name": "Matheus Gabriel",
+            "GitHub Username": "Su3h7aM",
+            "Number of Commits": 1,
+            "Additions": 18,
+            "Deletions": 12,
+            "Files Changed": 5
+        },
+        "k1rowashere": {
+            "Developer Name": "k1rowashere",
+            "GitHub Username": "k1rowashere",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 1,
+            "Files Changed": 4
+        },
+        "andrew snelling": {
+            "Developer Name": "andrew snelling",
+            "GitHub Username": "snelling-a",
+            "Number of Commits": 1,
+            "Additions": 7,
+            "Deletions": 3,
+            "Files Changed": 5
+        },
+        "Myriad-Dreamin": {
+            "Developer Name": "Myriad-Dreamin",
+            "GitHub Username": "Myriad-Dreamin",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 1,
+            "Files Changed": 5
+        },
+        "Micah Halter": {
+            "Developer Name": "Micah Halter",
+            "GitHub Username": "mehalter",
+            "Number of Commits": 4,
+            "Additions": 26,
+            "Deletions": 1,
+            "Files Changed": 20
+        },
+        "William Boman": {
+            "Developer Name": "William Boman",
+            "GitHub Username": "williamboman",
+            "Number of Commits": 110,
+            "Additions": 5194,
+            "Deletions": 1484,
+            "Files Changed": 363
+        },
+        "Ga\u00ebtan Lehmann": {
+            "Developer Name": "Ga\u00ebtan Lehmann",
+            "GitHub Username": "glehmann",
+            "Number of Commits": 1,
+            "Additions": 6,
+            "Deletions": 1,
+            "Files Changed": 5
+        },
+        "Eric Kelly": {
+            "Developer Name": "Eric Kelly",
+            "GitHub Username": "HeroicEric",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 0,
+            "Files Changed": 1
+        },
+        "XChy": {
+            "Developer Name": "XChy",
+            "GitHub Username": "XChy",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 0,
+            "Files Changed": 5
+        },
+        "Ale\u0161 Brelih": {
+            "Developer Name": "Ale\u0161 Brelih",
+            "GitHub Username": "alesbrelih",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 1,
+            "Files Changed": 5
+        },
+        "Nithin Bekal": {
+            "Developer Name": "Nithin Bekal",
+            "GitHub Username": "nithinbekal",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 3,
+            "Files Changed": 5
+        },
+        "Cody Bender": {
+            "Developer Name": "Cody Bender",
+            "GitHub Username": "cfbender",
+            "Number of Commits": 1,
+            "Additions": 8,
+            "Deletions": 4,
+            "Files Changed": 5
+        },
+        "Jaehwang Jung": {
+            "Developer Name": "Jaehwang Jung",
+            "GitHub Username": "tomtomjhj",
+            "Number of Commits": 1,
+            "Additions": 9,
+            "Deletions": 8,
+            "Files Changed": 3
+        },
+        "Dan Sully": {
+            "Developer Name": "Dan Sully",
+            "GitHub Username": "dsully",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 1,
+            "Files Changed": 5
+        },
+        "XeroOl": {
+            "Developer Name": "XeroOl",
+            "GitHub Username": "XeroOl",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 1,
+            "Files Changed": 5
+        },
+        "Dionisio E Alonso": {
+            "Developer Name": "Dionisio E Alonso",
+            "GitHub Username": "baco",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 1,
+            "Files Changed": 5
+        },
+        "Felix Zeller": {
+            "Developer Name": "Felix Zeller",
+            "GitHub Username": "Feel-ix-343",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 1,
+            "Files Changed": 5
+        },
+        "benedikt-bartscher": {
+            "Developer Name": "benedikt-bartscher",
+            "GitHub Username": "benedikt-bartscher",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 0,
+            "Files Changed": 5
+        },
+        "Philipp Heuer": {
+            "Developer Name": "Philipp Heuer",
+            "GitHub Username": "PhilippHeuer",
+            "Number of Commits": 1,
+            "Additions": 6,
+            "Deletions": 0,
+            "Files Changed": 5
+        },
+        "Simeon Simeonoff": {
+            "Developer Name": "Simeon Simeonoff",
+            "GitHub Username": "simeonoff",
+            "Number of Commits": 1,
+            "Additions": 6,
+            "Deletions": 2,
+            "Files Changed": 5
+        },
+        "Alberto Russo": {
+            "Developer Name": "Alberto Russo",
+            "GitHub Username": "russoalberto",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 0,
+            "Files Changed": 5
+        },
+        "Ravi Lamichhane": {
+            "Developer Name": "Ravi Lamichhane",
+            "GitHub Username": "ravilmc",
+            "Number of Commits": 1,
+            "Additions": 3,
+            "Deletions": 3,
+            "Files Changed": 1
+        },
+        "brighten": {
+            "Developer Name": "brighten",
+            "GitHub Username": "vantaboard",
+            "Number of Commits": 1,
+            "Additions": 12,
+            "Deletions": 8,
+            "Files Changed": 5
+        },
+        "Frederik Buchl\u00e1k": {
+            "Developer Name": "Frederik Buchl\u00e1k",
+            "GitHub Username": "fbuchlak",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 5,
+            "Files Changed": 5
+        },
+        "L": {
+            "Developer Name": "L",
+            "GitHub Username": "llllvvuu",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 1,
+            "Files Changed": 5
+        },
+        "Ananda Umamil": {
+            "Developer Name": "Ananda Umamil",
+            "GitHub Username": "zweimach",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 0,
+            "Files Changed": 5
+        },
+        "Seth Daniel": {
+            "Developer Name": "Seth Daniel",
+            "GitHub Username": "WhoIsSethDaniel",
+            "Number of Commits": 1,
+            "Additions": 15,
+            "Deletions": 10,
+            "Files Changed": 5
+        },
+        "matawed": {
+            "Developer Name": "matawed",
+            "GitHub Username": "matawed",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 0,
+            "Files Changed": 5
+        },
+        "N.Y": {
+            "Developer Name": "N.Y",
+            "GitHub Username": "NYDEV0",
+            "Number of Commits": 1,
+            "Additions": 10,
+            "Deletions": 0,
+            "Files Changed": 1
+        },
+        "Zech Burrus": {
+            "Developer Name": "Zech Burrus",
+            "GitHub Username": "SirWizardLizard",
+            "Number of Commits": 1,
+            "Additions": 6,
+            "Deletions": 2,
+            "Files Changed": 5
+        },
+        "Peter Benjamin": {
+            "Developer Name": "Peter Benjamin",
+            "GitHub Username": "pbnj-dragon",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 1,
+            "Files Changed": 4
+        },
+        "Frederik Hansen": {
+            "Developer Name": "Frederik Hansen",
+            "GitHub Username": "fred441a",
+            "Number of Commits": 1,
+            "Additions": 7,
+            "Deletions": 2,
+            "Files Changed": 5
+        },
+        "Kostiantyn Liepieshov": {
+            "Developer Name": "Kostiantyn Liepieshov",
+            "GitHub Username": "liepieshov",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 1,
+            "Files Changed": 5
+        },
+        "pseudometa": {
+            "Developer Name": "pseudometa",
+            "GitHub Username": "chrisgrieser",
+            "Number of Commits": 4,
+            "Additions": 46,
+            "Deletions": 21,
+            "Files Changed": 20
+        },
+        "chrischen": {
+            "Developer Name": "chrischen",
+            "GitHub Username": "chrischen",
+            "Number of Commits": 1,
+            "Additions": 0,
+            "Deletions": 5,
+            "Files Changed": 1
+        },
+        "Teppei Taguchi": {
+            "Developer Name": "Teppei Taguchi",
+            "GitHub Username": "tetzng",
+            "Number of Commits": 2,
+            "Additions": 10,
+            "Deletions": 5,
+            "Files Changed": 6
+        },
+        "Bal\u00e1zs Szab\u00f3": {
+            "Developer Name": "Bal\u00e1zs Szab\u00f3",
+            "GitHub Username": "hobord",
+            "Number of Commits": 1,
+            "Additions": 4,
+            "Deletions": 1,
+            "Files Changed": 4
+        },
+        "Turiiya": {
+            "Developer Name": "Turiiya",
+            "GitHub Username": "ttytm",
+            "Number of Commits": 1,
+            "Additions": 7,
+            "Deletions": 1,
+            "Files Changed": 5
+        },
+        "Matheus Ashton Silva": {
+            "Developer Name": "Matheus Ashton Silva",
+            "GitHub Username": "ashton",
+            "Number of Commits": 1,
+            "Additions": 3,
+            "Deletions": 3,
+            "Files Changed": 3
+        },
+        "Bryan Kenote": {
+            "Developer Name": "Bryan Kenote",
+            "GitHub Username": "bryankenote",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 0,
+            "Files Changed": 5
+        },
+        "Gerrit Meier": {
+            "Developer Name": "Gerrit Meier",
+            "GitHub Username": "meistermeier",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 0,
+            "Files Changed": 5
+        },
+        "j1mbo64": {
+            "Developer Name": "j1mbo64",
+            "GitHub Username": "j1mbo64",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 0,
+            "Files Changed": 5
+        },
+        "takuto": {
+            "Developer Name": "takuto",
+            "GitHub Username": "pysan3",
+            "Number of Commits": 2,
+            "Additions": 9,
+            "Deletions": 1,
+            "Files Changed": 9
+        },
+        "Benedikt Reinartz": {
+            "Developer Name": "Benedikt Reinartz",
+            "GitHub Username": "filmor",
+            "Number of Commits": 1,
+            "Additions": 4,
+            "Deletions": 1,
+            "Files Changed": 4
+        },
+        "Zephyr Lykos": {
+            "Developer Name": "Zephyr Lykos",
+            "GitHub Username": "mochaaP",
+            "Number of Commits": 1,
+            "Additions": 4,
+            "Deletions": 0,
+            "Files Changed": 4
+        },
+        "Ricardo Marliere": {
+            "Developer Name": "Ricardo Marliere",
+            "GitHub Username": "rbmarliere",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 1,
+            "Files Changed": 5
+        },
+        "Rene Zbinden": {
+            "Developer Name": "Rene Zbinden",
+            "GitHub Username": "zbindenren",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 0,
+            "Files Changed": 5
+        },
+        "SamuraX": {
+            "Developer Name": "SamuraX",
+            "GitHub Username": "matmatias",
+            "Number of Commits": 1,
+            "Additions": 1,
+            "Deletions": 0,
+            "Files Changed": 1
+        },
+        "fan": {
+            "Developer Name": "fan",
+            "GitHub Username": "sharefantasy",
+            "Number of Commits": 1,
+            "Additions": 6,
+            "Deletions": 1,
+            "Files Changed": 5
+        },
+        "Mikey": {
+            "Developer Name": "Mikey",
+            "GitHub Username": "ahdinosaur",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 3,
+            "Files Changed": 6
+        },
+        "Ray Jameson": {
+            "Developer Name": "Ray Jameson",
+            "GitHub Username": "RayJameson",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 0,
+            "Files Changed": 5
+        },
+        "Matt Mirus": {
+            "Developer Name": "Matt Mirus",
+            "GitHub Username": "mmirus",
+            "Number of Commits": 1,
+            "Additions": 17,
+            "Deletions": 13,
+            "Files Changed": 5
+        },
+        "Fraser Hanson": {
+            "Developer Name": "Fraser Hanson",
+            "GitHub Username": "gongfarmer",
+            "Number of Commits": 1,
+            "Additions": 4,
+            "Deletions": 1,
+            "Files Changed": 4
+        },
+        "An Hoang": {
+            "Developer Name": "An Hoang",
+            "GitHub Username": "intagaming",
+            "Number of Commits": 1,
+            "Additions": 1,
+            "Deletions": 0,
+            "Files Changed": 1
+        },
+        "Gaetano Esposito": {
+            "Developer Name": "Gaetano Esposito",
+            "GitHub Username": "pyroMain404",
+            "Number of Commits": 1,
+            "Additions": 11,
+            "Deletions": 7,
+            "Files Changed": 5
+        },
+        "Maks Markovets": {
+            "Developer Name": "Maks Markovets",
+            "GitHub Username": "jamapag",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 0,
+            "Files Changed": 5
+        },
+        "Samyak Sarnayak": {
+            "Developer Name": "Samyak Sarnayak",
+            "GitHub Username": "Samyak2",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 0,
+            "Files Changed": 5
+        },
+        "krap": {
+            "Developer Name": "krap",
+            "GitHub Username": "krapjost",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 0,
+            "Files Changed": 5
+        },
+        "Vladyslav Aviedov": {
+            "Developer Name": "Vladyslav Aviedov",
+            "GitHub Username": "vladaviedov",
+            "Number of Commits": 1,
+            "Additions": 10,
+            "Deletions": 1,
+            "Files Changed": 6
+        },
+        "DrummyFloyd": {
+            "Developer Name": "DrummyFloyd",
+            "GitHub Username": "DrummyFloyd",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 0,
+            "Files Changed": 5
+        },
+        "Peeranut Pongpakatien": {
+            "Developer Name": "Peeranut Pongpakatien",
+            "GitHub Username": "MomePP",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 1,
+            "Files Changed": 5
+        },
+        "ionutleca": {
+            "Developer Name": "ionutleca",
+            "GitHub Username": "ionutleca",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 1,
+            "Files Changed": 5
+        },
+        "elky": {
+            "Developer Name": "elky",
+            "GitHub Username": "avegancafe",
+            "Number of Commits": 1,
+            "Additions": 55,
+            "Deletions": 0,
+            "Files Changed": 4
+        },
+        "meredith": {
+            "Developer Name": "meredith",
+            "GitHub Username": "merrilymeredith",
+            "Number of Commits": 1,
+            "Additions": 6,
+            "Deletions": 2,
+            "Files Changed": 5
+        },
+        "Marc Deop": {
+            "Developer Name": "Marc Deop",
+            "GitHub Username": "marcdeop",
+            "Number of Commits": 1,
+            "Additions": 147,
+            "Deletions": 144,
+            "Files Changed": 4
+        },
+        "adrian5": {
+            "Developer Name": "adrian5",
+            "GitHub Username": "adrian5",
+            "Number of Commits": 1,
+            "Additions": 2,
+            "Deletions": 2,
+            "Files Changed": 1
+        },
+        "tako": {
+            "Developer Name": "tako",
+            "GitHub Username": "notjl",
+            "Number of Commits": 1,
+            "Additions": 19,
+            "Deletions": 19,
+            "Files Changed": 7
+        },
+        "Massolari": {
+            "Developer Name": "Massolari",
+            "GitHub Username": "Massolari",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 0,
+            "Files Changed": 5
+        },
+        "Cason Adams": {
+            "Developer Name": "Cason Adams",
+            "GitHub Username": "casonadams",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 0,
+            "Files Changed": 5
+        },
+        "David Ward": {
+            "Developer Name": "David Ward",
+            "GitHub Username": "errantepiphany",
+            "Number of Commits": 2,
+            "Additions": 15,
+            "Deletions": 0,
+            "Files Changed": 6
+        },
+        "Humberto Massa": {
+            "Developer Name": "Humberto Massa",
+            "GitHub Username": "massa",
+            "Number of Commits": 1,
+            "Additions": 11,
+            "Deletions": 0,
+            "Files Changed": 7
+        },
+        "Dawit Abate": {
+            "Developer Name": "Dawit Abate",
+            "GitHub Username": "Dave-Elec",
+            "Number of Commits": 1,
+            "Additions": 6,
+            "Deletions": 1,
+            "Files Changed": 6
+        },
+        "s1341": {
+            "Developer Name": "s1341",
+            "GitHub Username": "s1341",
+            "Number of Commits": 1,
+            "Additions": 5,
+            "Deletions": 1,
+            "Files Changed": 5
+        },
+        "NullVoxPopuli": {
+            "Developer Name": "NullVoxPopuli",
+            "GitHub Username": "NullVoxPopuli",
+            "Number of Commits": 1,
+            "Additions": 9,
+            "Deletions": 3,
+            "Files Changed": 4
+        },
+        "Yaroslav Mazuryk": {
+            "Developer Name": "Yaroslav Mazuryk",
+            "GitHub Username": "deathmaz",
+            "Number of Commits": 1,
+            "Additions": 2,
+            "Deletions": 2,
+            "Files Changed": 1
+        },
+        "kylo252": {
+            "Developer Name": "kylo252",
+            "GitHub Username": "kylo252",
+            "Number of Commits": 2,
+            "Additions": 109,
+            "Deletions": 22,
+            "Files Changed": 5
+        },
+        "Marcos Nils": {
+            "Developer Name": "Marcos Nils",
+            "GitHub Username": "marcosnils",
+            "Number of Commits": 1,
+            "Additions": 4,
+            "Deletions": 0,
+            "Files Changed": 4
+        },
+        "vshturman": {
+            "Developer Name": "vshturman",
+            "GitHub Username": "vshturman",
+            "Number of Commits": 1,
+            "Additions": 1,
+            "Deletions": 1,
+            "Files Changed": 1
+        },
+        "Saurabh Charde": {
+            "Developer Name": "Saurabh Charde",
+            "GitHub Username": "schardev",
+            "Number of Commits": 1,
+            "Additions": 1,
+            "Deletions": 1,
+            "Files Changed": 1
+        }
+    },
+    "prs": {
+        "williamboman": {
+            "Sentiment Score": 0.05,
+            "PRs Contributed": 136
+        },
+        "williambotman": {
+            "Sentiment Score": 0.07,
+            "PRs Contributed": 114
+        },
+        "schardev": {
+            "Sentiment Score": 0.54,
+            "PRs Contributed": 1
+        },
+        "abxh": {
+            "Sentiment Score": 0.73,
+            "PRs Contributed": 1
+        },
+        "vshturman": {
+            "Sentiment Score": -0.18,
+            "PRs Contributed": 1
+        },
+        "kylo252": {
+            "Sentiment Score": 0.6,
+            "PRs Contributed": 2
+        },
+        "marcosnils": {
+            "Sentiment Score": 0.27,
+            "PRs Contributed": 1
+        },
+        "pysan3": {
+            "Sentiment Score": 0.25,
+            "PRs Contributed": 2
+        },
+        "deathmaz": {
+            "Sentiment Score": 0.49,
+            "PRs Contributed": 1
+        },
+        "NullVoxPopuli": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        },
+        "mehalter": {
+            "Sentiment Score": 0.3,
+            "PRs Contributed": 5
+        },
+        "s1341": {
+            "Sentiment Score": 0.71,
+            "PRs Contributed": 1
+        },
+        "Dave-Elec": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        },
+        "massa": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        },
+        "luckyvladimir": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        },
+        "errantepiphany": {
+            "Sentiment Score": 0.38,
+            "PRs Contributed": 3
+        },
+        "vladaviedov": {
+            "Sentiment Score": 0.16,
+            "PRs Contributed": 1
+        },
+        "casonadams": {
+            "Sentiment Score": 0.23,
+            "PRs Contributed": 1
+        },
+        "Massolari": {
+            "Sentiment Score": 0.06,
+            "PRs Contributed": 1
+        },
+        "notjl": {
+            "Sentiment Score": -0.02,
+            "PRs Contributed": 1
+        },
+        "marcdeop": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        },
+        "adrian5": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        },
+        "luovkle": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        },
+        "merrilymeredith": {
+            "Sentiment Score": 0.22,
+            "PRs Contributed": 1
+        },
+        "worming004": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        },
+        "hvladev": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        },
+        "ionutleca": {
+            "Sentiment Score": 0.1,
+            "PRs Contributed": 1
+        },
+        "avegancafe": {
+            "Sentiment Score": 0.14,
+            "PRs Contributed": 1
+        },
+        "Fabsolute": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        },
+        "MomePP": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        },
+        "null": {
+            "Sentiment Score": 0.34,
+            "PRs Contributed": 5
+        },
+        "github-actions[bot]": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 2
+        },
+        "jay-babu": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 2
+        },
+        "asmodeus812": {
+            "Sentiment Score": 0.31,
+            "PRs Contributed": 1
+        },
+        "krapjost": {
+            "Sentiment Score": 0.25,
+            "PRs Contributed": 1
+        },
+        "mineiro": {
+            "Sentiment Score": 0.38,
+            "PRs Contributed": 1
+        },
+        "jamapag": {
+            "Sentiment Score": 0.49,
+            "PRs Contributed": 1
+        },
+        "Samyak2": {
+            "Sentiment Score": 0.28,
+            "PRs Contributed": 1
+        },
+        "pyroMain404": {
+            "Sentiment Score": 0.25,
+            "PRs Contributed": 1
+        },
+        "intagaming": {
+            "Sentiment Score": 0.68,
+            "PRs Contributed": 1
+        },
+        "gongfarmer": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        },
+        "mmirus": {
+            "Sentiment Score": 0.25,
+            "PRs Contributed": 1
+        },
+        "RayJameson": {
+            "Sentiment Score": 0.49,
+            "PRs Contributed": 1
+        },
+        "ahdinosaur": {
+            "Sentiment Score": 0.25,
+            "PRs Contributed": 1
+        },
+        "chrisgrieser": {
+            "Sentiment Score": 0.12,
+            "PRs Contributed": 4
+        },
+        "matmatias": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        },
+        "zbindenren": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        },
+        "rbmarliere": {
+            "Sentiment Score": 0.12,
+            "PRs Contributed": 4
+        },
+        "mochaaP": {
+            "Sentiment Score": 0.33,
+            "PRs Contributed": 3
+        },
+        "filmor": {
+            "Sentiment Score": 0.25,
+            "PRs Contributed": 1
+        },
+        "meistermeier": {
+            "Sentiment Score": 0.25,
+            "PRs Contributed": 1
+        },
+        "bryankenote": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        },
+        "tetzng": {
+            "Sentiment Score": 0.22,
+            "PRs Contributed": 2
+        },
+        "ttytm": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        },
+        "ashton": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 2
+        },
+        "hobord": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        },
+        "dmtrKovalenko": {
+            "Sentiment Score": 0.18,
+            "PRs Contributed": 1
+        },
+        "chrischen": {
+            "Sentiment Score": 0.49,
+            "PRs Contributed": 1
+        },
+        "liepieshov": {
+            "Sentiment Score": 0.32,
+            "PRs Contributed": 1
+        },
+        "fred441a": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        },
+        "robincaloudis": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        },
+        "pbnj-dragon": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        },
+        "Numkil": {
+            "Sentiment Score": 0.48,
+            "PRs Contributed": 1
+        },
+        "SirWizardLizard": {
+            "Sentiment Score": 0.17,
+            "PRs Contributed": 1
+        },
+        "vantaboard": {
+            "Sentiment Score": 0.25,
+            "PRs Contributed": 1
+        },
+        "NYDEV0": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        },
+        "WhoIsSethDaniel": {
+            "Sentiment Score": 0.29,
+            "PRs Contributed": 1
+        },
+        "zweimach": {
+            "Sentiment Score": 0.25,
+            "PRs Contributed": 1
+        },
+        "llllvvuu": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        },
+        "fbuchlak": {
+            "Sentiment Score": 0.49,
+            "PRs Contributed": 1
+        },
+        "ravilmc": {
+            "Sentiment Score": 0.49,
+            "PRs Contributed": 1
+        },
+        "russoalberto": {
+            "Sentiment Score": 0.25,
+            "PRs Contributed": 1
+        },
+        "simeonoff": {
+            "Sentiment Score": 0.38,
+            "PRs Contributed": 1
+        },
+        "PhilippHeuer": {
+            "Sentiment Score": 0.49,
+            "PRs Contributed": 1
+        },
+        "benedikt-bartscher": {
+            "Sentiment Score": 0.49,
+            "PRs Contributed": 1
+        },
+        "Feel-ix-343": {
+            "Sentiment Score": -0.11,
+            "PRs Contributed": 1
+        },
+        "baco": {
+            "Sentiment Score": 0.36,
+            "PRs Contributed": 1
+        },
+        "jgelens": {
+            "Sentiment Score": 0.49,
+            "PRs Contributed": 1
+        },
+        "XeroOl": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        },
+        "Parsifa1": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        },
+        "dsully": {
+            "Sentiment Score": 0.49,
+            "PRs Contributed": 1
+        },
+        "cathaysia": {
+            "Sentiment Score": 0.18,
+            "PRs Contributed": 1
+        },
+        "tomtomjhj": {
+            "Sentiment Score": 0.79,
+            "PRs Contributed": 1
+        },
+        "cfbender": {
+            "Sentiment Score": 0.25,
+            "PRs Contributed": 1
+        },
+        "alesbrelih": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        },
+        "XChy": {
+            "Sentiment Score": 0.49,
+            "PRs Contributed": 1
+        },
+        "nithinbekal": {
+            "Sentiment Score": 0.29,
+            "PRs Contributed": 1
+        },
+        "glehmann": {
+            "Sentiment Score": 0.25,
+            "PRs Contributed": 1
+        },
+        "HeroicEric": {
+            "Sentiment Score": 0.49,
+            "PRs Contributed": 1
+        },
+        "snelling-a": {
+            "Sentiment Score": 0.25,
+            "PRs Contributed": 1
+        },
+        "k1rowashere": {
+            "Sentiment Score": 0.25,
+            "PRs Contributed": 1
+        },
+        "Myriad-Dreamin": {
+            "Sentiment Score": 0.25,
+            "PRs Contributed": 1
+        },
+        "Su3h7aM": {
+            "Sentiment Score": 0.25,
+            "PRs Contributed": 1
+        },
+        "carlosflorencio": {
+            "Sentiment Score": 0.25,
+            "PRs Contributed": 1
+        },
+        "f0i": {
+            "Sentiment Score": 0.25,
+            "PRs Contributed": 1
+        },
+        "slavamak": {
+            "Sentiment Score": 0.0,
+            "PRs Contributed": 1
+        }
+    }
+}

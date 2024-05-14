@@ -9,6 +9,8 @@ from flask_executor import Executor
 import logging
 from flask_cors import CORS
 from urllib.parse import urlparse
+import requests
+from urllib.parse import urlparse, urlsplit
 
 app = Flask(__name__)
 CORS(app)
@@ -17,7 +19,33 @@ executor = Executor(app)
 analysis_directory = "analysis"  # Update with the path to the analysis directory
 in_progress_directory = "in_progress"  # Update with the path to the in_progress directory
 
-print("Debug mode: ", app.debug) ## false
+
+def check_repository_exists(repo_url):
+    """
+    Check if a GitHub repository exists by parsing its URL.
+
+    Args:
+    repo_url (str): The full URL to the GitHub repository.
+
+    Returns:
+    bool: True if the repository exists, False otherwise.
+    """
+    parts = urlsplit(repo_url)
+    path = parts.path.strip('/').split('/')
+    if len(path) != 2 or parts.netloc not in ['github.com', 'www.github.com']:
+        return False
+
+    owner, repo_name = path
+    url = f"https://api.github.com/repos/{owner}/{repo_name}"
+    response = requests.get(url)
+    
+    if response.status_code == 200:
+        return True
+    elif response.status_code == 404:
+        return False
+    else:
+        return False
+
 # Helper function to validate URLs using urllib.parse
 def is_valid_url(url):
     try:
@@ -88,7 +116,10 @@ def create_analysis():
         return jsonify({"error": "Repository URL is required."}), 400
     if not is_valid_url(repo_url):
         return jsonify({"error": "Invalid Repository URL."}), 400
-
+    
+    if not check_repository_exists(repo_url):
+        return jsonify({"error": "Repository does not exists."}), 400
+    
     repo_name = repo_url.split('/')[-1]
     in_progress_path = os.path.join(in_progress_directory, f"{repo_name}.json")
     if any(os.listdir(in_progress_directory)):
