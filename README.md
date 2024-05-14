@@ -56,7 +56,7 @@ npm run dev
 ```
 Next.js typically runs on http://localhost:3000. Open this URL in a web browser to view your application.
 ## 5. Basic Navigation 
-### Homepage
+### 5.1. Homepage
 Overview: The homepage displays a grid of tiles representing different GitHub repositories you are monitoring or can monitor.
 
 #### Adding a Repository: Click on the "+" tile to add a new repository.
@@ -79,6 +79,45 @@ Action: Verify the repository URL for any typos or errors, ensure you have the c
 After adding a repository, you may observe a loading state, represented by a spinning icon on a repository tile. This indicates that the repository data is being fetched and processed.
 
 Patience During Load: Repository analysis can take some time depending on the size of the repository and the complexity of the data. Patience during this phase is key.
+
+### 5.2. Selecting a Repository
+Overview: After adding a repository, you can click on any repository tile to view detailed analytics.
+
+#### Selecting Date: Once you click on a repository, a dialog box prompts you to select a date for analysis.
+Choose a date from the dropdown menu and click "Select" to proceed with data analysis for that date.
+Click "Close" to return to the homepage.
+
+### 5.3. Repository Analytics Dashboard
+Overview: This dashboard provides a detailed view of commits, pull requests (PRs), and issues for the selected repository.
+
+#### Navigation:
+The dashboard is divided into three tabs: Commits, PRs, and Issues.
+Click on the desired tab to view detailed analytics for each section.
+
+### 5.4. Viewing Commits
+Overview: This section provides detailed statistics and data about commits made in the repository.
+
+#### Commit Details:
+Each commit is listed with details such as the developer’s name, GitHub username, number of additions, deletions, files changed, and the total number of commits.
+Use the "Filter by" dropdown to refine displayed results based on specific criteria.
+
+### 5.5. Viewing Pull Requests and Issues
+Overview: Similar to the commits tab, this section provides insights into PRs and issues associated with the repository.
+
+#### PR and Issue Details:
+Detailed metrics including the average issue resolution time, number of issues assigned/created/resolved, and similar metrics for PRs are displayed.
+Filtering options are also available to customize the data presentation.
+
+### 5.6. Using Filters
+Overview: Both the "Commits" and "Issues" sections include filters to help you refine the data displayed.
+
+#### Applying Filters:
+Click on the "Filter by" dropdown.
+Select your preferred criteria, such as "Number of Issues Created" or "Average Issue Resolution Time".
+The dashboard will update to reflect your chosen filters.
+
+#### 5.7. Navigating Back
+Back Button: Each detailed analytics page features a "Back" button that returns you to the previous screen or the homepage, allowing for easy navigation between different sections of the application.
 
 
 
