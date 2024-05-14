@@ -1,11 +1,9 @@
 # DevInsight User Manual
 
-## User Manual
-
-### 1. Introduction
+## 1. Introduction
 Welcome to DevInsight, a comprehensive analytics tool designed to enhance the visibility of developer contributions in software projects using data from GitHub repositories. This manual will guide you through accessing, setting up, and navigating the application to leverage its full potential.
 
-### 2. Accessing DevInsight
+## 2. Accessing DevInsight
 To start using DevInsight, you need to first clone the repository to your local machine.
 
 **Step 1:** Navigate to the DevInsight GitHub Repository.  
@@ -14,7 +12,7 @@ To start using DevInsight, you need to first clone the repository to your local 
 ```bash
 git clone https://github.com/Emruur/CS453Project
 ```
-### 3. Setting Up and Running the Backend (Flask)
+## 3. Setting Up and Running the Backend (Flask)
 3.1. Environment Setup:
 Ensure Python and Flask are installed. You can install Flask using pip if it's not already installed:
 ```bash
