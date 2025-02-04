@@ -128,6 +128,7 @@ class GitHubFetcher:
         end_cursor = None  # Start with no cursor
         has_next_page = True  # Condition to keep the loop running
         cntr= 1
+        allowed_retries= 5
         while has_next_page:
             query = f"""
             query {{
@@ -170,8 +171,18 @@ class GitHubFetcher:
                 page_info = data['data']['repository']['defaultBranchRef']['target']['history']['pageInfo']
                 has_next_page = page_info['hasNextPage']
                 end_cursor = page_info['endCursor']
+                allowed_retries = 5
             else:
-                raise Exception(f"Failed to fetch developers and commits. Status code: {response.status_code} - {response.reason}")
+                if allowed_retries > 0:
+                    app.logger.debug(f"Failed to fetch commit trying again {allowed_retries}")
+                    allowed_retries -= 1
+                    continue
+                else:
+                    app.logger.debug("No allowed retries left, quitting ...")
+                    file_name= f'repo_errors/commit_{response.status_code}.html'
+                    with open(file_name, 'w') as file:
+                        file.write(response.text)
+                    break
 
         return all_commits
 
@@ -213,6 +224,7 @@ class GitHubFetcher:
         """
 
         cntr=1
+        allowed_retries = 5
         while True:
             issues_fetch_count = 100 if max_issues is None else min(100, max_issues - len(all_issues))
             variables = {'owner': self.owner, 'repoName': self.repo_name, 'count': issues_fetch_count, 'issuesCursor': issues_cursor}
@@ -220,7 +232,7 @@ class GitHubFetcher:
             cntr += 1
             response = requests.post(self.base_url, json={'query': query_template, 'variables': variables}, headers=self.headers)
             if response.status_code == 200:
-
+                allowed_retries = 5
                 data = response.json()
                 issues = data['data']['repository']['issues']['edges']
                 all_issues.extend(issues[:issues_fetch_count])
@@ -232,7 +244,16 @@ class GitHubFetcher:
                 if issues_cursor is None or (max_issues is not None and len(all_issues) >= max_issues):
                     break
             else:
-                raise Exception(f"Issue query failed to run with a {response.status_code} - {response.text}")
+                if allowed_retries > 0:
+                    allowed_retries -= 1
+                    app.logger.debug(f"Failed to fetch issue trying again {allowed_retries}")
+                    continue
+                else:
+                    app.logger.debug("No allowed retries left, quitting ...")
+                    file_name= f'repo_errors/issue_{response.status_code}.html'
+                    with open(file_name, 'w') as file:
+                        file.write(response.text)
+                    break
 
         return all_issues[:max_issues]
 
@@ -305,19 +326,25 @@ class GitHubFetcher:
         }
         app.logger.debug(f"Fetching prs for {repo_name}")
         cnt= 1
+        allowed_retries= 5
         while True:
             app.logger.debug(f" PR Fetching page {cnt} for {repo_name}")
             response = requests.post(url, json={'query': query_template, 'variables': variables}, headers=headers)
             app.logger.debug(f" returned {cnt}")
 
             if response.status_code != 200:
-                app.logger.debug(f"PR query failed to run with a {response.status_code}")
-                file_name= f'repo_errors/{repo_name}.html'
-                with open(file_name, 'w') as file:
-                    file.write(response.text)
-                break
+                if allowed_retries > 0:
+                    allowed_retries -= 1
+                    app.logger.debug(f"Failed to fetch pr trying again {allowed_retries}")
+                    continue
+                else:
+                    app.logger.debug("No allowed retries left, quitting ...")
+                    file_name= f'repo_errors/pr_{response.status_code}.html'
+                    with open(file_name, 'w') as file:
+                        file.write(response.text)
+                    break
             else:
-                
+                allowed_retries= 5
                 data = response.json()
                 if 'errors' in data:
                     app.logger.debug("GraphQL query returned errors:")

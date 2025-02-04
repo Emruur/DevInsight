@@ -573,16 +573,16 @@
             "Sentiment Score": 0.12,
             "PRs Contributed": 2
         },
-        "abumj": {
-            "Sentiment Score": 0.12,
-            "PRs Contributed": 2
-        },
         "EliEron": {
             "Sentiment Score": 0.12,
             "PRs Contributed": 2
         },
         "voznesenskym": {
             "Sentiment Score": 0.31,
+            "PRs Contributed": 2
+        },
+        "abumj": {
+            "Sentiment Score": 0.12,
             "PRs Contributed": 2
         },
         "mallorbc": {
@@ -961,24 +961,20 @@
             "Sentiment Score": 0.0,
             "PRs Contributed": 1
         },
+        "mzamini92": {
+            "Sentiment Score": 0.42,
+            "PRs Contributed": 2
+        },
         "NinoRisteski": {
             "Sentiment Score": 0.06,
             "PRs Contributed": 2
         },
-        "philippefutureboy": {
-            "Sentiment Score": 0.06,
-            "PRs Contributed": 2
-        },
-        "eindenbom": {
-            "Sentiment Score": 0.06,
-            "PRs Contributed": 2
-        },
-        "HSQ79815": {
+        "yaomingamd": {
             "Sentiment Score": 0.12,
             "PRs Contributed": 1
         },
-        "mzamini92": {
-            "Sentiment Score": 0.42,
+        "kimdwkimdw": {
+            "Sentiment Score": 0.06,
             "PRs Contributed": 2
         },
         "amolinasalazar": {
@@ -989,11 +985,15 @@
             "Sentiment Score": 0.12,
             "PRs Contributed": 1
         },
-        "yaomingamd": {
+        "HSQ79815": {
             "Sentiment Score": 0.12,
             "PRs Contributed": 1
         },
-        "kimdwkimdw": {
+        "philippefutureboy": {
+            "Sentiment Score": 0.06,
+            "PRs Contributed": 2
+        },
+        "eindenbom": {
             "Sentiment Score": 0.06,
             "PRs Contributed": 2
         },
@@ -1021,11 +1021,11 @@
             "Sentiment Score": 0.0,
             "PRs Contributed": 1
         },
-        "devpramod": {
+        "devpramod-intel": {
             "Sentiment Score": 0.17,
             "PRs Contributed": 1
         },
-        "devpramod-intel": {
+        "devpramod": {
             "Sentiment Score": 0.17,
             "PRs Contributed": 1
         },
@@ -1089,11 +1089,11 @@
             "Sentiment Score": 0.05,
             "PRs Contributed": 2
         },
-        "hisabimbola": {
+        "PascalHauriUnique": {
             "Sentiment Score": 0.0,
             "PRs Contributed": 1
         },
-        "PascalHauriUnique": {
+        "hisabimbola": {
             "Sentiment Score": 0.0,
             "PRs Contributed": 1
         },

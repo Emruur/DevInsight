@@ -13,6 +13,7 @@ import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import Spinner from "react-bootstrap/Spinner";
 import Form from "react-bootstrap/Form";
+import { Pagination } from 'react-bootstrap';
 
 const Page = () => {
   const [repoData, setRepoData] = useState({});
@@ -50,6 +51,7 @@ const Page = () => {
 
   const applyCommitFilter = () => {
     let sortedList;
+    setCurrentCommitPage(1)
     switch (selectedCommitFilter) {
       case 1:
         sortedList = [...developerDataList].sort((a, b) => {
@@ -132,6 +134,7 @@ const Page = () => {
   };
 
   const applyPRFilter = () => {
+    setCurrentPRPage(1)
     let combinedList = prDataList.map((data, index) => ({
       data,
       name: prNames[index],
@@ -178,6 +181,7 @@ const Page = () => {
   };
 
   const applyIssuesFilter = () => {
+    setCurrentIssuePage(1)
     let combinedList = issueDataList.map((data, index) => ({
       data,
       name: issueNames[index],
@@ -262,6 +266,45 @@ const Page = () => {
 
   const router = useRouter();
   const { slug } = router.query;
+
+  //COMMIT PAGINATOION
+  const [currentCommitPage, setCurrentCommitPage] = useState(1);
+  const itemsPerPage = 5; // Number of items per page
+
+  // Calculate the index of the first and last item to display on the current page
+  const indexOfLastCommitItem = currentCommitPage * itemsPerPage;
+  const indexOfFirstCommitItem = indexOfLastCommitItem - itemsPerPage;
+  const currentDeveloperCommitList = developerDataList ? developerDataList.slice(indexOfFirstCommitItem, indexOfLastCommitItem): [];
+
+  //ISSUE PAGINATOION
+  const [currentIssuePage, setCurrentIssuePage] = useState(1);
+
+  // Calculate the index of the first and last item to display on the current page
+  const indexOfLastIssueItem = currentIssuePage * itemsPerPage;
+  const indexOfFirstIssueItem = indexOfLastIssueItem - itemsPerPage;
+  const currentIssueList = issueDataList ? issueDataList.slice(indexOfFirstIssueItem, indexOfLastIssueItem): [];
+
+  //PR PAGINATION
+  const [currentPRPage, setCurrentPRPage] = useState(1);
+
+  // Calculate the index of the first and last item to display on the current page
+  const indexOfLastPRItem = currentPRPage * itemsPerPage;
+  const indexOfFirstPRItem = indexOfLastPRItem - itemsPerPage;
+  const currentPRList = prDataList ? prDataList.slice(indexOfFirstPRItem, indexOfLastPRItem): [];
+
+
+  // Change page
+  const handleCommitPageChange = (pageNumber) => {
+    setCurrentCommitPage(pageNumber);
+  };
+
+  const handleIssuePageChange = (pageNumber) => {
+    setCurrentIssuePage(pageNumber);
+  };
+
+  const handlePRPageChange = (pageNumber) => {
+    setCurrentPRPage(pageNumber);
+  };
 
   useEffect(() => {
     if (slug) {
@@ -356,17 +399,35 @@ const Page = () => {
                         <option value="5">Number of Commits</option>
                       </Form.Select>
                     </div>
+                    <>
                     {!developerDataList || developerDataList.length === 0 ? (
                       <Spinner animation="border" />
                     ) : (
-                      developerDataList.map((developerData, idx) => (
-                        <DeveloperCard
-                          key={idx}
-                          devName={developerNames[idx]}
-                          devData={developerData}
-                        />
-                      ))
+                      <>
+                        {currentDeveloperCommitList.map((developerData, idx) => (
+                          <DeveloperCard
+                            key={idx} // Use a unique identifier here
+                            devName={developerNames[indexOfFirstCommitItem + idx]} // Adjust index based on pagination
+                            devData={developerData}
+                          />
+                        ))}
+                        <Pagination>
+                          <Pagination.Prev
+                            onClick={() => handleCommitPageChange(currentCommitPage - 1)}
+                            disabled={currentCommitPage === 1}
+                          />
+                          <p className="p-2 d-flex align-center justify-center">
+                          {currentCommitPage}
+                          </p>
+                          
+                          <Pagination.Next
+                            onClick={() => handleCommitPageChange(currentCommitPage + 1)}
+                            disabled={indexOfLastCommitItem >= developerDataList.length}
+                          />
+                        </Pagination>
+                      </>
                     )}
+                  </>
                   </Tab>
                   <Tab eventKey="prs" title="PRs">
                     <div className="d-flex align-items-center">
@@ -396,16 +457,34 @@ const Page = () => {
                         <option value="2">Sentiment Score</option>
                       </Form.Select>
                     </div>
+                    
+
                     {!prDataList || prDataList.length === 0 ? (
                       <Spinner animation="border" />
                     ) : (
-                      prDataList.map((prData, idx) => (
-                        <PrCard
+                      <>
+                        {currentPRList.map((prData, idx) => (
+                          <PrCard
                           key={idx}
                           prName={prNames[idx]}
                           prData={prData}
                         />
-                      ))
+                      ))}
+                        <Pagination>
+                          <Pagination.Prev
+                            onClick={() => handlePRPageChange(currentPRPage - 1)}
+                            disabled={currentPRPage === 1}
+                          />
+                          <p className="p-2 d-flex align-center justify-center">
+                          {currentPRPage}
+                          </p>
+                          
+                          <Pagination.Next
+                            onClick={() => handlePRPageChange(currentPRPage + 1)}
+                            disabled={indexOfLastPRItem >= prDataList.length}
+                          />
+                        </Pagination>
+                      </>
                     )}
                   </Tab>
                   <Tab eventKey="issues" title="Issues">
@@ -438,16 +517,33 @@ const Page = () => {
                         <option value="4">Average Issue Resolution Time</option>
                       </Form.Select>
                     </div>
+
                     {!issueDataList || issueDataList.length === 0 ? (
                       <Spinner animation="border" />
                     ) : (
-                      issueDataList.map((issueData, idx) => (
+                      <>
+                        {currentIssueList.map((issueData, idx) => (
                         <IssueCard
                           key={idx}
-                          issueName={issueNames[idx]}
+                          issueName={issueNames[indexOfFirstIssueItem + idx]}
                           issueData={issueData}
                         />
-                      ))
+                      ))}
+                        <Pagination>
+                          <Pagination.Prev
+                            onClick={() => handleIssuePageChange(currentIssuePage - 1)}
+                            disabled={currentIssuePage === 1}
+                          />
+                          <p className="p-2 d-flex align-center justify-center">
+                          {currentIssuePage}
+                          </p>
+                          
+                          <Pagination.Next
+                            onClick={() => handleIssuePageChange(currentIssuePage + 1)}
+                            disabled={indexOfLastIssueItem >= issueDataList.length}
+                          />
+                        </Pagination>
+                      </>
                     )}
                   </Tab>
                 </Tabs>
