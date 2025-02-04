@@ -3554,13 +3554,13 @@
         }
     },
     "prs": {
-        "khronokernel": {
-            "Sentiment Score": 0.06,
-            "PRs Contributed": 82
-        },
         "dhinakg": {
             "Sentiment Score": 0.18,
             "PRs Contributed": 16
+        },
+        "khronokernel": {
+            "Sentiment Score": 0.06,
+            "PRs Contributed": 82
         },
         "silvae86": {
             "Sentiment Score": -0.34,

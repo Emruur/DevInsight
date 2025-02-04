@@ -15524,7 +15524,7 @@
             "Number of Issues Resolved": 0,
             "Average Issue Resolution Time": 0
         },
-        "pedropalencia": {
+        "palenciaherranz": {
             "Number of Issues Created": 1,
             "Number of Issues Assigned": 0,
             "Number of Issues Resolved": 0,
@@ -36568,14 +36568,6 @@
         }
     },
     "commits": {
-        "Garfield69": {
-            "Developer Name": "Garfield69",
-            "GitHub Username": "garfield69",
-            "Number of Commits": 6932,
-            "Additions": 184681,
-            "Deletions": 125419,
-            "Files Changed": 13795
-        },
         "ilike2burnthing": {
             "Developer Name": "ilike2burnthing",
             "GitHub Username": "ilike2burnthing",
@@ -36583,6 +36575,14 @@
             "Additions": 40155,
             "Deletions": 38666,
             "Files Changed": 3645
+        },
+        "Garfield69": {
+            "Developer Name": "Garfield69",
+            "GitHub Username": "garfield69",
+            "Number of Commits": 6931,
+            "Additions": 184679,
+            "Deletions": 125416,
+            "Files Changed": 13794
         },
         "Bogdan": {
             "Developer Name": "Bogdan",

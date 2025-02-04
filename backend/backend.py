@@ -30,6 +30,8 @@ def check_repository_exists(repo_url):
     Returns:
     bool: True if the repository exists, False otherwise.
     """
+    if repo_url[-1]== "/":
+        return False
     parts = urlsplit(repo_url)
     path = parts.path.strip('/').split('/')
     if len(path) != 2 or parts.netloc not in ['github.com', 'www.github.com']:

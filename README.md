@@ -1,3 +1,22 @@
+# DevInsight: Developer Contribution Analysis Tool
+
+**DevInsight** is a developer contribution analysis tool designed to provide **fair and comprehensive evaluations** of software developers’ work within a team. Traditional assessment methods like **Lines of Code (LOC) or commit frequency** often fail to reflect individual contributions accurately. **DevInsight** addresses this issue by offering **granular developer-specific insights**, **comprehensive analytics beyond chronological data**, and a **user-friendly interface with advanced visualizations**.
+
+## Key Features and Innovations
+
+### 1. Developer-Specific Insights:
+- Tracks **issue handling efficiency** (who opened/closed issues).
+- Evaluates **commit quality and impact**.
+- Identifies **contribution patterns** to highlight strengths and areas for improvement.
+
+### 2. Comprehensive Metrics Beyond Chronological Data:
+- Includes **code quality assessments** and **impact analysis**.
+- Goes beyond **basic commit tracking** to offer **deep insights** into developer contributions.
+
+### 3. User-Friendly Interface:
+- Provides **interactive dashboards** with **advanced visualizations**.
+- Designed for **developers, managers, and HR professionals** for easy interpretation of analytics.
+
 # DevInsight User Manual
 
 ## 1. Introduction

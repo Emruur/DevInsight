@@ -19,36 +19,36 @@
         "Emre U\u011fur": {
             "Developer Name": "Emre U\u011fur",
             "GitHub Username": "Emruur",
-            "Number of Commits": 4,
-            "Additions": 9,
-            "Deletions": 2,
-            "Files Changed": 4
-        },
-        "Emruur": {
-            "Developer Name": "Emruur",
-            "GitHub Username": "Emruur",
-            "Number of Commits": 5,
-            "Additions": 13,
-            "Deletions": 3,
-            "Files Changed": 5
+            "Number of Commits": 2,
+            "Additions": 6,
+            "Deletions": 0,
+            "Files Changed": 2
         },
         "bengisubuket": {
             "Developer Name": "bengisubuket",
             "GitHub Username": "bengisubuket",
-            "Number of Commits": 2,
-            "Additions": 4,
-            "Deletions": 2,
-            "Files Changed": 2
+            "Number of Commits": 1,
+            "Additions": 3,
+            "Deletions": 0,
+            "Files Changed": 1
+        },
+        "Emruur": {
+            "Developer Name": "Emruur",
+            "GitHub Username": "Emruur",
+            "Number of Commits": 4,
+            "Additions": 11,
+            "Deletions": 3,
+            "Files Changed": 4
         }
     },
     "prs": {
         "Emruur": {
-            "Sentiment Score": -0.34,
-            "PRs Contributed": 2
+            "Sentiment Score": -0.53,
+            "PRs Contributed": 1
         },
         "bengisubuket": {
-            "Sentiment Score": 0.27,
-            "PRs Contributed": 2
+            "Sentiment Score": 0.54,
+            "PRs Contributed": 1
         }
     }
 }
